@@ -22,6 +22,27 @@ $(function () {
             }
         }
     })
+    $('.testimonials-slider').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        animateIn: 'fadeIn',
+        animateOut: 'fadeOut',
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    })
 
     $('.services').click(function () {
         $('.services').removeClass('active-service');
@@ -127,4 +148,25 @@ $(function () {
             display : 'block'
         });
     });
+
+
+
+
+
+    
+
+    $('.why-us').mouseover(function(){
+        $('.quality .fa-magnifying-glass').animate({
+            left : '-50px',
+        },500);
+        $('.quality .fa-magnifying-glass').animate({            
+            left : '0px',      
+        },500,);        
+    })
+
+    
+
+
+
+
 });
