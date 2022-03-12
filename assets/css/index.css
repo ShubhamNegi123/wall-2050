@@ -40,7 +40,17 @@ header .navigation-bar {
   width: 100%;
 }
 
+header .navigation-bar nav ul li {
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+  font-style: italic;
+  cursor: pointer;
+}
+
 header .navigation-bar nav ul li a {
+  text-transform: uppercase;
+  font-style: italic;
   position: relative;
   z-index: 999;
   text-decoration: none;
@@ -48,11 +58,82 @@ header .navigation-bar nav ul li a {
   background-color: transparent;
   text-transform: uppercase;
   font-size: 14px;
-  /* transition: all .3s ease;
-                        &:hover{
-                            transition: all .3s ease;
-                            background-color: #fff;
-                        } */
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header .navigation-bar nav ul li a::after {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  -webkit-transition: translate(-50%);
+  transition: translate(-50%);
+  width: 0%;
+  height: 3px;
+  content: "";
+  background-color: red;
+}
+
+header .navigation-bar nav ul li a::before {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  position: absolute;
+  top: 28px;
+  right: 50%;
+  -webkit-transition: translate(-50%);
+  transition: translate(-50%);
+  width: 0%;
+  height: 3px;
+  content: "";
+  background-color: red;
+}
+
+header .navigation-bar nav ul li::after {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  -webkit-transition: translate(-50%);
+  transition: translate(-50%);
+  width: 0%;
+  height: 3px;
+  content: "";
+  background-color: red;
+}
+
+header .navigation-bar nav ul li::before {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  position: absolute;
+  top: 28px;
+  right: 50%;
+  -webkit-transition: translate(-50%);
+  transition: translate(-50%);
+  width: 0%;
+  height: 3px;
+  content: "";
+  background-color: red;
+}
+
+header .navigation-bar nav ul li:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: red;
+}
+
+header .navigation-bar nav ul li:hover::after {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  width: 60%;
+}
+
+header .navigation-bar nav ul li:hover::before {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  width: 60%;
 }
 
 header .navigation-bar nav ul li .service-dropdown-menu,
@@ -141,7 +222,7 @@ header .main-slider .main-slider-bg::after {
   content: "";
   position: absolute;
   /* background: rgba(34, 34, 34, 0.3); */
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   top: 0px;
   left: 0px;
   right: 0px;
@@ -470,13 +551,13 @@ header .owl-carousel button.owl-dot {
 
 .portfolio .portfolio-tab-target .portfolio-target .image-wrapper img {
   width: 100%;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .portfolio .portfolio-tab-target .portfolio-target .image-wrapper .hover-text {
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   position: absolute;
   z-index: 999;
   left: 0px;
@@ -487,7 +568,8 @@ header .owl-carousel button.owl-dot {
   background-color: rgba(17, 17, 17, 0.7);
 }
 
-.portfolio .portfolio-tab-target .portfolio-target .image-wrapper .hover-text p, .portfolio .portfolio-tab-target .portfolio-target .image-wrapper .hover-text span {
+.portfolio .portfolio-tab-target .portfolio-target .image-wrapper .hover-text p,
+.portfolio .portfolio-tab-target .portfolio-target .image-wrapper .hover-text span {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -503,14 +585,14 @@ header .owl-carousel button.owl-dot {
 }
 
 .portfolio .portfolio-tab-target .portfolio-target .image-wrapper:hover .hover-text {
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   bottom: 0px;
 }
 
 .portfolio .portfolio-tab-target .portfolio-target .image-wrapper:hover img {
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
 }
@@ -690,7 +772,7 @@ header .owl-carousel button.owl-dot {
 /* testimonials end */
 /* subscribe */
 .subscribe {
-  padding: 50px 0px;
+  padding: 100px 0px;
   background-color: #eee;
 }
 
@@ -743,13 +825,60 @@ header .owl-carousel button.owl-dot {
 /* subscribe end */
 /* contact */
 .contact {
-  border: 1px solid #000;
+  padding-top: 50px;
+}
+
+.contact h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact .footer-address,
+.contact .footer-contact,
+.contact .footer-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 100px;
+}
+
+.contact .footer-address::after,
+.contact .footer-contact::after,
+.contact .footer-email::after {
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  width: 2px;
+  height: 100px;
+  content: "";
+  background-color: #777;
+}
+
+.contact .footer-address .footer-icon,
+.contact .footer-contact .footer-icon,
+.contact .footer-email .footer-icon {
+  margin-right: 20px;
+  font-size: 30px;
+  border-radius: 50%;
+  padding: 5px 12px;
+  background-color: #eee;
+}
+
+.contact .footer-address .fst,
+.contact .footer-contact .fst,
+.contact .footer-email .fst {
+  padding: 5px 15px;
 }
 
 /* contact end*/
 /* map */
 .map {
-  margin-top: 100px;
   position: relative;
   width: 100%;
   height: 500px;
@@ -822,8 +951,8 @@ header .owl-carousel button.owl-dot {
 }
 
 .social-links .links ul li:hover i {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
 }
 
 .social-links .copyright {
