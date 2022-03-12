@@ -40,7 +40,21 @@ header .navigation-bar {
   width: 100%;
 }
 
+header .navigation-bar nav ul {
+  /* .service:hover {
+                    .service-dropdown-menu {
+                        position: absolute;
+                    }
+                    .portfolio :hover {
+                        .portfolio-dropdown-menu {
+                            position: absolute;
+                        }
+                    }
+                } */
+}
+
 header .navigation-bar nav ul li {
+  padding-bottom: 10px;
   position: relative;
   color: #fff;
   text-transform: uppercase;
@@ -102,7 +116,7 @@ header .navigation-bar nav ul li::after {
   width: 0%;
   height: 3px;
   content: "";
-  background-color: red;
+  background-color: #be0026;
 }
 
 header .navigation-bar nav ul li::before {
@@ -116,13 +130,13 @@ header .navigation-bar nav ul li::before {
   width: 0%;
   height: 3px;
   content: "";
-  background-color: red;
+  background-color: #be0026;
 }
 
 header .navigation-bar nav ul li:hover {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  color: red;
+  color: linear-gradient(90deg, #be0026 0%, #3983c7 100%);
 }
 
 header .navigation-bar nav ul li:hover::after {
@@ -141,16 +155,57 @@ header .navigation-bar nav ul li .service-dropdown-menu,
 header .navigation-bar nav ul li .portfolio-dropdown-menu {
   visibility: hidden;
   opacity: 0;
+  width: 180px;
   position: absolute;
-  top: 0px;
+  top: 80px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-header .navigation-bar nav ul .service:hover .service-dropdown-menu {
-  position: absolute;
+header .navigation-bar nav ul li .service-dropdown-menu li,
+header .navigation-bar nav ul li .portfolio-dropdown-menu li {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding-left: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0px;
+  border-left: 3px solid transparent;
 }
 
-header .navigation-bar nav ul .portfolio :hover .portfolio-dropdown-menu {
-  position: absolute;
+header .navigation-bar nav ul li .service-dropdown-menu li a,
+header .navigation-bar nav ul li .portfolio-dropdown-menu li a {
+  display: block;
+  padding: 10px 0px;
+}
+
+header .navigation-bar nav ul li .service-dropdown-menu li::before, header .navigation-bar nav ul li .service-dropdown-menu li::after,
+header .navigation-bar nav ul li .portfolio-dropdown-menu li::before,
+header .navigation-bar nav ul li .portfolio-dropdown-menu li::after {
+  display: none;
+}
+
+header .navigation-bar nav ul li .service-dropdown-menu li:hover,
+header .navigation-bar nav ul li .portfolio-dropdown-menu li:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding-left: 20px;
+  border-left: 3px solid #3983c7;
+}
+
+header .navigation-bar nav ul .service-nav:hover .service-dropdown-menu {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  visibility: visible;
+  opacity: 1;
+  top: 30px;
+}
+
+header .navigation-bar nav ul .portfolio-nav:hover .portfolio-dropdown-menu {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  visibility: visible;
+  opacity: 1;
+  top: 30px;
 }
 
 header .main-slider .main-slider-bg {
@@ -223,7 +278,7 @@ header .main-slider .main-slider-bg::after {
   content: "";
   position: absolute;
   /* background: rgba(34, 34, 34, 0.3); */
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   top: 0px;
   left: 0px;
   right: 0px;
@@ -267,13 +322,14 @@ header .owl-carousel button.owl-dot {
 }
 
 .about .about-us-content p {
+  text-align: justify;
   font-size: 16px;
   line-height: 30px;
   word-spacing: 2px;
   letter-spacing: 1px;
 }
 
-.about .first-content {
+.about .first-content p {
   font-size: 20px;
   word-spacing: 2px;
   font-style: italic;
@@ -388,7 +444,7 @@ header .owl-carousel button.owl-dot {
 .service .services:hover p {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
-  color: #111;
+  color: rgba(0, 0, 0, 0.65);
 }
 
 .service .content-wrapper {
@@ -404,15 +460,17 @@ header .owl-carousel button.owl-dot {
   transition: all 0.5s ease;
 }
 
-.service .content-wrapper .branding-content-wrapper {
+.service .content-wrapper .creative-content-wrapper {
   visibility: visible;
   opacity: 1;
 }
 
-.service .content-wrapper .branding-content p,
-.service .content-wrapper .graphic-content p,
+.service .content-wrapper .creative-content p,
+.service .content-wrapper .google-ad-content p,
 .service .content-wrapper .web-content p,
-.service .content-wrapper .two-d-content p {
+.service .content-wrapper .seo-content p,
+.service .content-wrapper .smm-content p,
+.service .content-wrapper .smo-content p {
   font-size: 16px;
   line-height: 30px;
   word-spacing: 2px;
@@ -423,17 +481,19 @@ header .owl-carousel button.owl-dot {
   letter-spacing: 1px;
 }
 
-.service .content-wrapper .branding-content1 p,
-.service .content-wrapper .graphic-content1 p,
-.service .content-wrapper .two-d-content1 p,
+.service .content-wrapper .creative-content1 p,
+.service .content-wrapper .google-ad-content1 p,
+.service .content-wrapper .smo-content1 p,
+.service .content-wrapper .seo-content1 p,
+.service .content-wrapper .smm-content1 p,
 .service .content-wrapper .web-content1 p {
-  font-size: 20px;
   word-spacing: 2px;
   font-style: italic;
   font-size: 16px;
   line-height: 30px;
   word-spacing: 2px;
   letter-spacing: 1px;
+  font-size: 20px;
 }
 
 .service .active-service i,
@@ -445,10 +505,11 @@ header .owl-carousel button.owl-dot {
 /* digital-service */
 .digital-service {
   margin-top: 100px;
-  background-image: url(../images/bg1.jpg);
+  background-image: url(../images/multimedia-img2.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  position: relative;
 }
 
 .digital-service .digital-service-content {
@@ -458,6 +519,8 @@ header .owl-carousel button.owl-dot {
 .digital-service .digital-service-content h2,
 .digital-service .digital-service-content p,
 .digital-service .digital-service-content a {
+  position: relative;
+  z-index: 99;
   color: #fff;
 }
 
@@ -502,8 +565,24 @@ header .owl-carousel button.owl-dot {
   color: #fff;
 }
 
+.digital-service .digital-service-img {
+  position: relative;
+  z-index: 999;
+}
+
 .digital-service .digital-service-img img {
   margin-top: -50px;
+}
+
+.digital-service::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1;
 }
 
 /* digital-service end */
@@ -542,6 +621,7 @@ header .owl-carousel button.owl-dot {
 
 .portfolio .portfolio-tab-target .portfolio-target {
   overflow: hidden;
+  display: none;
 }
 
 .portfolio .portfolio-tab-target .portfolio-target .image-wrapper {
@@ -596,6 +676,10 @@ header .owl-carousel button.owl-dot {
   transition: all 0.3s ease;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
+}
+
+.portfolio .portfolio-tab-target .logos-image-wrapper {
+  display: block;
 }
 
 .portfolio .active-tab {
@@ -720,11 +804,12 @@ header .owl-carousel button.owl-dot {
 /* testimonials */
 .testimonials {
   margin-top: 100px;
-  background-image: url(../images/testimonial-bg.jpg);
+  background-image: url(../images/testimonials-bg.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .testimonials .testimonials-slider {
@@ -768,6 +853,26 @@ header .owl-carousel button.owl-dot {
 .testimonials .testimonials-slider .client span i {
   margin-right: 10px;
   color: #fff;
+}
+
+.testimonials::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.testimonials .owl-carousel .owl-nav {
+  display: block;
+}
+
+.testimonials .owl-carousel .owl-nav .owl-prev span, .testimonials .owl-carousel .owl-nav .owl-next span {
+  font-size: 50px !important;
+  color: red;
+  margin-right: 50px;
 }
 
 /* testimonials end */
@@ -875,6 +980,24 @@ header .owl-carousel button.owl-dot {
 .contact .footer-contact .fst,
 .contact .footer-email .fst {
   padding: 5px 15px;
+}
+
+.contact .footer-address .footer-details h3,
+.contact .footer-contact .footer-details h3,
+.contact .footer-email .footer-details h3 {
+  color: #111;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.contact .footer-address .footer-details p,
+.contact .footer-contact .footer-details p,
+.contact .footer-email .footer-details p {
+  font-size: 16px;
+  line-height: 30px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 /* contact end*/

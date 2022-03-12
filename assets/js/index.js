@@ -25,9 +25,7 @@ $(function () {
     $('.testimonials-slider').owlCarousel({
         loop: true,
         margin: 10,
-        nav: true,
-        animateIn: 'fadeIn',
-        animateOut: 'fadeOut',
+        nav: true,       
         autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: false,
@@ -57,18 +55,18 @@ $(function () {
         });
     }
 
-    $('.branding').click(function () {
+    $('.creative').click(function () {
         hidden();
-        $('.branding-content-wrapper').css({
+        $('.creative-content-wrapper').css({
             visibility: 'visible',
             opacity: '1',
             transition: 'all .3s ease'
         });
     });
 
-    $('.graphic').click(function () {
+    $('.google-ad').click(function () {
         hidden();
-        $('.graphic-content-wrapper').css({
+        $('.google-ad-content-wrapper').css({
             visibility: 'visible',
             opacity: '1',
             transition: 'all .3s ease'
@@ -84,9 +82,25 @@ $(function () {
         });
     });
 
-    $('.two-d').click(function () {
+    $('.smo').click(function () {
         hidden();
-        $('.two-d-content-wrapper').css({
+        $('.smo-content-wrapper').css({
+            visibility: 'visible',
+            opacity: '1',
+            transition: 'all .3s ease'
+        });
+    });
+    $('.seo').click(function () {
+        hidden();
+        $('.seo-content-wrapper').css({
+            visibility: 'visible',
+            opacity: '1',
+            transition: 'all .3s ease'
+        });
+    });
+    $('.smm').click(function () {
+        hidden();
+        $('.smm-content-wrapper').css({
             visibility: 'visible',
             opacity: '1',
             transition: 'all .3s ease'
@@ -94,14 +108,7 @@ $(function () {
     });
 
 
-    $('.marketing').click(function () {
-        hidden();
-        $('.marketing-content-wrapper').css({
-            visibility: 'visible',
-            opacity: '1',
-            transition: 'all .3s ease'
-        });
-    });
+   
 
 
 
@@ -112,7 +119,7 @@ $(function () {
 
     $('.portfolio-tabs ul li').click(function () {
         $('.portfolio-tabs ul li').removeClass('active-tab');
-        $(this).addClass('active-tab');
+        $(this).addClass('active-tab');        
     });
     
     function none(){
@@ -122,9 +129,9 @@ $(function () {
     }
 
 
-    $('.graphic').click(function(){
+    $('.logos').click(function(){
         none();
-        $('.graphic-image-wrapper').css({
+        $('.logos-image-wrapper').css({
             display:'block'
         })
     });
@@ -136,17 +143,24 @@ $(function () {
         })
     });
 
-    $('.marketing').click(function(){
+    $('.poster-banner').click(function(){
         none();
-        $('.marketing-image-wrapper').css({
+        $('.poster-banner-image-wrapper').css({
             display:'block'
         })
     });
 
-    $('.portfolio-all').click(function(){
-        $('.portfolio-target').css({
-            display : 'block'
-        });
+    $('.packaging').click(function(){
+        none();
+        $('.packaging-banner-image-wrapper').css({
+            display:'block'
+        })
+    });
+    $('.brochure-catalogue').click(function(){
+        none();
+        $('.brochure-catalogue-banner-image-wrapper').css({
+            display:'block'
+        })
     });
 
 

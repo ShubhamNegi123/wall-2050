@@ -1,6 +1,6 @@
 /* variables */
-$primary-color: red;
-$secondary-color: blue;
+$primary-color: #be0026;
+$secondary-color: #3983c7;
 $text-color: #777;
 
 /* mixins */
@@ -64,6 +64,7 @@ header {
         nav {
             ul {
                 li {
+                    padding-bottom: 10px;
                     position: relative;
                     color: #fff;
                     text-transform: uppercase;
@@ -104,7 +105,7 @@ header {
                             background-color: red;
                         }
                     }
-                   
+
                     &::after {
                         transition: all 0.4s ease;
                         position: absolute;
@@ -114,7 +115,7 @@ header {
                         width: 0%;
                         height: 3px;
                         content: "";
-                        background-color: red;
+                        background-color: $primary-color;
                     }
                     &::before {
                         transition: all 0.4s ease;
@@ -125,13 +126,13 @@ header {
                         width: 0%;
                         height: 3px;
                         content: "";
-                        background-color: red;
+                        background-color: $primary-color;
                     }
 
-                    &:hover {                                              
+                    &:hover {
                         & {
                             transition: all 0.3s ease;
-                            color: red;
+                            color: linear-gradient(90deg, rgba(190, 0, 38, 1) 0%, rgba(57, 131, 199, 1) 100%);
                             &::after {
                                 transition: all 0.4s ease;
                                 width: 60%;
@@ -147,19 +148,60 @@ header {
                     .portfolio-dropdown-menu {
                         visibility: hidden;
                         opacity: 0;
-
+                        width: 180px;
                         position: absolute;
-                        top: 0px;
+                        top: 80px;
+                        transition: all 0.3s ease;
+                        li {
+                            transition: all 0.3s ease;
+                            padding-left: 10px;
+                            border-bottom: 1px solid #eee;
+                            padding-bottom: 0px;
+                            border-left: 3px solid transparent;
+                            a {
+                                display: block;
+                                padding: 10px 0px;
+                            }
+                            &::before,
+                            &::after {
+                                display: none;
+                            }
+                            &:hover {
+                                transition: all 0.3s ease;
+                                padding-left: 20px;
+                                border-left: 3px solid $secondary-color;
+                            }
+                        }
                     }
                 }
-                .service:hover {
+                /* .service:hover {
                     .service-dropdown-menu {
                         position: absolute;
                     }
+                    .portfolio :hover {
+                        .portfolio-dropdown-menu {
+                            position: absolute;
+                        }
+                    }
+                } */
+                .service-nav {
+                    &:hover {
+                        .service-dropdown-menu {
+                            transition: all 0.3s ease;
+                            visibility: visible;
+                            opacity: 1;
+                            top: 30px;
+                        }
+                    }
                 }
-                .portfolio :hover {
-                    .portfolio-dropdown-menu {
-                        position: absolute;
+                .portfolio-nav {
+                    &:hover {
+                        .portfolio-dropdown-menu {
+                            transition: all 0.3s ease;
+                            visibility: visible;
+                            opacity: 1;
+                            top: 30px;
+                        }
                     }
                 }
             }
@@ -229,7 +271,7 @@ header {
                 content: "";
                 position: absolute;
                 /* background: rgba(34, 34, 34, 0.3); */
-                background-color: rgba(0, 0, 0, 0.6);
+                background-color: rgba(0, 0, 0, 0.5);
                 top: 0px;
                 left: 0px;
                 right: 0px;
@@ -270,6 +312,7 @@ header {
     }
     .about-us-content {
         p {
+            text-align: justify;
             font-size: 16px;
             line-height: 30px;
             word-spacing: 2px;
@@ -277,9 +320,11 @@ header {
         }
     }
     .first-content {
-        @include h3-font;
-        word-spacing: 2px;
-        font-style: italic;
+        p {
+            @include h3-font;
+            word-spacing: 2px;
+            font-style: italic;
+        }
     }
     .about-images {
         position: relative;
@@ -361,7 +406,7 @@ header {
             i,
             p {
                 transition: all 0.1s ease;
-                color: #111;
+                color: rgba(0, 0, 0, 0.65);
             }
         }
     }
@@ -375,15 +420,17 @@ header {
             transition: all 0.5s ease;
         }
 
-        .branding-content-wrapper {
+        .creative-content-wrapper {
             visibility: visible;
             opacity: 1;
         }
 
-        .branding-content,
-        .graphic-content,
+        .creative-content,
+        .google-ad-content,
         .web-content,
-        .two-d-content {
+        .seo-content,
+        .smm-content,
+        .smo-content {
             p {
                 font-size: 16px;
                 line-height: 30px;
@@ -393,15 +440,17 @@ header {
             }
         }
 
-        .branding-content1,
-        .graphic-content1,
-        .two-d-content1,
+        .creative-content1,
+        .google-ad-content1,
+        .smo-content1,
+        .seo-content1,
+        .smm-content1,
         .web-content1 {
             p {
-                font-size: 20px;
                 word-spacing: 2px;
                 font-style: italic;
                 @include p;
+                @include h3-font;
             }
         }
     }
@@ -418,15 +467,18 @@ header {
 /* digital-service */
 .digital-service {
     @include section-space;
-    background-image: url(../images/bg1.jpg);
+    background-image: url(../images/multimedia-img2.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    position: relative;
     .digital-service-content {
         margin: 100px 0px;
         h2,
         p,
         a {
+            position: relative;
+            z-index: 99;
             color: #fff;
         }
         h2,
@@ -463,9 +515,21 @@ header {
     }
 
     .digital-service-img {
+        position: relative;
+        z-index: 999;
         img {
             margin-top: -50px;
         }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.6);
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 1;
     }
 }
 /* digital-service end */
@@ -499,6 +563,7 @@ header {
     .portfolio-tab-target {
         .portfolio-target {
             overflow: hidden;
+            display: none;
             .image-wrapper {
                 overflow: hidden;
                 position: relative;
@@ -543,6 +608,9 @@ header {
                     }
                 }
             }
+        }
+        .logos-image-wrapper {
+            display: block;
         }
     }
     .active-tab {
@@ -647,11 +715,12 @@ header {
 /* testimonials */
 .testimonials {
     @include section-space;
-    background-image: url(../images/testimonial-bg.jpg);
+    background-image: url(../images/testimonials-bg.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
     .testimonials-slider {
         border: 1px solid #ffff;
         text-align: center;
@@ -686,6 +755,26 @@ header {
                 }
             }
         }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+    }
+    .owl-carousel .owl-nav {
+        display: block;        
+        .owl-prev,.owl-next {
+            span{
+                font-size: 50px !important;
+                color: red;
+                margin-right: 50px;
+            }
+        }
+       
     }
 }
 /* testimonials end */
@@ -772,6 +861,17 @@ header {
         }
         .fst {
             padding: 5px 15px;
+        }
+        .footer-details {
+            h3 {
+                color: #111;
+                @include h3-font;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+            p {
+                @include p;
+            }
         }
     }
 }
