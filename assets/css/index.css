@@ -46,6 +46,7 @@ header .navigation-bar nav ul li {
   text-transform: uppercase;
   font-style: italic;
   cursor: pointer;
+  font-size: 14px;
 }
 
 header .navigation-bar nav ul li a {
