@@ -1,6 +1,29 @@
 $(function () {
 
     /* home slider */
+    $('.client-slider').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        animateIn: 'fadeIn',
+        animateOut: 'fadeOut',
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    });
+
+
     $('.main-slider').owlCarousel({
         loop: true,
         margin: 10,
@@ -21,7 +44,9 @@ $(function () {
                 items: 1
             }
         }
-    })
+    });
+
+
     $('.testimonials-slider').owlCarousel({
         loop: true,
         margin: 10,
@@ -40,7 +65,16 @@ $(function () {
                 items: 1
             }
         }
-    })
+    });
+
+
+$('.owl-carousel .owl-nav .owl-prev span').html('<i class="fa-solid fa-circle-arrow-left"></i>');
+$('.owl-carousel .owl-nav .owl-next span').html('<i class="fa-solid fa-circle-arrow-right"></i>');
+
+
+
+
+
 
     $('.services').click(function () {
         $('.services').removeClass('active-service');
@@ -57,6 +91,7 @@ $(function () {
 
     $('.creative').click(function () {
         hidden();
+        $(this).addClass('active');
         $('.creative-content-wrapper').css({
             visibility: 'visible',
             opacity: '1',

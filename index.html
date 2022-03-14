@@ -19,11 +19,12 @@
 
     <!-- css file -->
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/header-footer.css">
 
     <!-- font -->
     <link rel="stylesheet" href="assets/fonts/icofont/icofont.min.css">
 
-
+    <!-- jquery cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
@@ -46,15 +47,16 @@
         $(function () {
             $(".navigation-bar").load("navigation-bar.html");
         });
+        $(function () {
+            $("footer").load("footer.html");
+        });
     </script>
-
-
 </head>
 
 <body>
     <!-- header -->
+    <div class="navigation-bar"></div>
     <header>
-        <div class="navigation-bar"></div>
         <div class="owl-carousel owl-theme main-slider">
             <div class="item">
                 <div class="main-slider-bg main-slider-bg3">
@@ -199,7 +201,7 @@
                 <div class="col-lg-2">
                     <div class="services creative active-service">
                         <i class="fa-solid fa-pen-to-square"></i>
-                        <p>Creative Services</p>
+                        <p>Creative Designing</p>
                     </div>
                 </div>
                 <div class="col-lg-2">
@@ -210,7 +212,7 @@
                 </div>
                 <div class="col-lg-2">
                     <div class="services smo">
-                        <i class="icofont-ui-settings"></i>
+                        <i class="icofont-megaphone-alt"></i>
                         <p>SMO</p>
                     </div>
                 </div>
@@ -222,7 +224,7 @@
                 </div>
                 <div class="col-lg-2">
                     <div class="services smm">
-                        <i class="icofont-megaphone-alt"></i>
+                        <i class="icofont-ui-settings"></i>
                         <p>SMM</p>
                     </div>
                 </div>
@@ -676,67 +678,7 @@
         </iframe>
     </section>
 
-    <section class="contact">
-        <div class="container">
-            <h2>CONTACT</h2>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="footer-address">
-                        <div class="footer-icon fst">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-                        <div class="footer-details">
-                            <h3>address</h3>
-                            <p> F-40, Jagat Puri, Parwana Road, <br>
-                                Krishna Nagar,Delhi-110051</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="footer-contact">
-                        <div class="footer-icon">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
-                        <div class="footer-details">
-                            <h3>call us :</h3>
-                            <p> +91-99536-20862</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="footer-email">
-                        <div class="footer-icon">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-                        <div class="footer-details">
-                            <h3>email us at :</h3>
-                            <p>wallcommunication@gmail.com</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="social-links">
-        <div class="container">
-            <div class="footer-logo">
-                <img src="assets/images/footerlogo.png" alt="logo">
-            </div>
-            <div class="links">
-                <ul>
-                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-instagram-square"></i></a></li>
-                </ul>
-            </div>
-
-            <div class="copyright">
-                <p> © 2022 All Copyrights Reserved To wall communication Pvt Ltd </p>
-                <span>strategy made simple</span>
-            </div>
-        </div>
-    </section>
+    <footer></footer>
 
 
 
@@ -748,22 +690,21 @@
 
 
 
+ <!-- aos library cdn -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- aos library cdn -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <!-- owl-carousal js cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="assets/js/index.js"></script>
-    <script src="assets/js/header-footer.js"></script>
-    <script>
-        AOS.init({
-            offset: 220,
-            delay: 200,
-            duration: 400,
-        });
-        // v
-    </script>
+ <!-- owl-carousal js cdn -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+ <script src="assets/js/index.js"></script>
+ <script src="assets/js/header-footer.js"></script>
+ <script>
+     AOS.init({
+         offset: 220,
+         delay: 200,
+         duration: 400,
+     });
+     // v
+ </script>
 
 </body>
 

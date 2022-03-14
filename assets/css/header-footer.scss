@@ -1,0 +1,353 @@
+/* variables */
+$primary-color: #be0026;
+$secondary-color: #3983c7;
+$text-color: #777;
+
+/* mixins */
+@mixin h1-font {
+    font-size: 30px;
+}
+@mixin h2-font {
+    font-size: 25px;
+}
+@mixin h3-font {
+    font-size: 20px;
+}
+
+@mixin section-space {
+    margin-top: 100px;
+}
+
+@mixin p {
+    font-size: 16px;
+    line-height: 30px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+/* Dosis fonts */
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap");
+
+body {
+    * {
+        color: $text-color;
+        font-weight: 400;
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        font-family: "Dosis", sans-serif;
+
+        a {
+            text-decoration: none;
+        }
+        ul {
+            list-style: none;
+        }
+    }
+}
+
+.navigation-bar {
+    background-color: transparent;
+    z-index: 9999;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    .logo {
+        img {
+            position: relative;
+            z-index: 999;
+            width: 100%;
+        }
+    }
+    nav {
+        ul {
+            li {
+                padding-bottom: 10px;
+                position: relative;
+                color: #fff;
+                text-transform: uppercase;
+                font-style: italic;
+                cursor: pointer;
+                font-size: 14px;
+                a {
+                    text-transform: uppercase;
+                    font-style: italic;
+                    position: relative;
+                    z-index: 999;
+                    text-decoration: none;
+                    color: #fff;
+                    background-color: transparent;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    transition: all 0.3s ease;
+                    &::after {
+                        transition: all 0.4s ease;
+                        position: absolute;
+                        top: 28px;
+                        left: 50%;
+                        transition: translate(-50%);
+                        width: 0%;
+                        height: 3px;
+                        content: "";
+                        background-color: red;
+                    }
+                    &::before {
+                        transition: all 0.4s ease;
+                        position: absolute;
+                        top: 28px;
+                        right: 50%;
+                        transition: translate(-50%);
+                        width: 0%;
+                        height: 3px;
+                        content: "";
+                        background-color: red;
+                    }
+                }
+
+                &::after {
+                    transition: all 0.4s ease;
+                    position: absolute;
+                    top: 28px;
+                    left: 50%;
+                    transition: translate(-50%);
+                    width: 0%;
+                    height: 3px;
+                    content: "";
+                    background-color: $primary-color;
+                }
+                &::before {
+                    transition: all 0.4s ease;
+                    position: absolute;
+                    top: 28px;
+                    right: 50%;
+                    transition: translate(-50%);
+                    width: 0%;
+                    height: 3px;
+                    content: "";
+                    background-color: $primary-color;
+                }
+
+                &:hover {
+                    & {
+                        transition: all 0.3s ease;
+                        color: linear-gradient(90deg, rgba(190, 0, 38, 1) 0%, rgba(57, 131, 199, 1) 100%);
+                        &::after {
+                            transition: all 0.4s ease;
+                            width: 60%;
+                        }
+                        &::before {
+                            transition: all 0.4s ease;
+                            width: 60%;
+                        }
+                    }
+                }
+
+                .service-dropdown-menu,
+                .portfolio-dropdown-menu,
+                .digital-marketing-dropdown-menu {
+                    visibility: hidden;
+                    opacity: 0;
+                    width: 180px;
+                    position: absolute;
+                    top: 80px;
+                    transition: all 0.3s ease;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    li {
+                        transition: all 0.3s ease;
+                        padding-left: 10px;
+                        border-bottom: 1px solid #eee;
+                        padding-bottom: 0px;
+                        border-left: 3px solid transparent;
+                        a {
+                            display: block;
+                            padding: 10px 0px;
+                        }
+                        i {
+                            margin-left: 10px;
+                            color: #fff;
+                            transform: rotate(0deg);
+                            transition:  all .2s ease;
+                        }
+                        &::before,
+                        &::after {
+                            display: none;
+                        }
+                        &:hover {
+                            transition: all 0.3s ease;
+                            padding-left: 20px;
+                            border-left: 3px solid $secondary-color;
+                            i {                               
+                                transform: rotate(180deg);
+                                transition:  all .2s ease;
+                            }
+                        }
+                    }
+                    .digital-marketing-dropdown {
+                        padding-bottom: 10px;
+                        position: relative;
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-style: italic;
+                        cursor: pointer;
+                        font-size: 14px;
+                        padding: 10px 0px;
+                        padding-left: 10px;
+                        .digital-marketing-dropdown-menu {
+                            position: absolute;
+                            right: -180px;
+                            top: 30px;
+                            visibility: hidden;
+                            opacity: 0;
+                            width: 180px;
+                            transition: all 0.3s ease;
+                            background-color: rgba(0, 0, 0, 0.5);
+                        }
+                        &:hover {
+                            .digital-marketing-dropdown-menu {
+                                visibility: visible;
+                                opacity: 1;
+                                transition: all 0.3s ease;
+                                top: -1px;
+                            }
+                        }
+                    }
+                }
+            }
+            /* .service:hover {
+                .service-dropdown-menu {
+                    position: absolute;
+                }
+                .portfolio :hover {
+                    .portfolio-dropdown-menu {
+                        position: absolute;
+                    }
+                }
+            } */
+            .service-nav {
+                &:hover {
+                    .service-dropdown-menu {
+                        transition: all 0.3s ease;
+                        visibility: visible;
+                        opacity: 1;
+                        top: 30px;
+                    }
+                }
+            }
+            .portfolio-nav {
+                &:hover {
+                    .portfolio-dropdown-menu {
+                        transition: all 0.3s ease;
+                        visibility: visible;
+                        opacity: 1;
+                        top: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* contact */
+.contact {
+    padding-top: 50px;
+    h2 {
+        @include h1-font;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .footer-address,
+    .footer-contact,
+    .footer-email {
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 100px;
+        &::after {
+            position: absolute;
+            top: 0px;
+            left: -20px;
+            width: 2px;
+            height: 100px;
+            content: "";
+            background-color: #777;
+        }
+        .footer-icon {
+            margin-right: 20px;
+            font-size: 30px;
+            border-radius: 50%;
+            padding: 5px 12px;
+            background-color: #eee;
+        }
+        .fst {
+            padding: 5px 15px;
+        }
+        .footer-details {
+            h3 {
+                color: #111;
+                @include h3-font;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+            p {
+                @include p;
+            }
+        }
+    }
+}
+/* contact end*/
+
+/* social-links */
+.social-links {
+    margin-bottom: 100px;
+    @include section-space;
+    .footer-logo {
+        text-align: center;
+        img {
+            width: 30%;
+        }
+    }
+    .links {
+        text-align: center;
+        margin: 30px 0px;
+        ul {
+            display: flex;
+            justify-content: center;
+            li {
+                border: 1px solid #000;
+                width: 30px;
+                background-color: transparent;
+                transform: rotate(45deg);
+                margin-right: 30px;
+                i {
+                    transition: all 0.3s ease;
+                    transform: rotate(-45deg);
+                    padding: 5px;
+                    font-size: 20px;
+                }
+                &:hover {
+                    transition: all 0.4s ease;
+                    i {
+                        transform: rotate(315deg);
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+        text-align: center;
+        p {
+            @include h3-font;
+            word-spacing: 5p;
+            i {
+                margin-right: 10px;
+            }
+        }
+        span {
+            word-spacing: 5px;
+            letter-spacing: 3px;
+        }
+    }
+}
+/* social-links end */
