@@ -1,0 +1,418 @@
+/* variables */
+/* mixins */
+/* Dosis fonts */
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap");
+body * {
+  color: #777;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Dosis", sans-serif;
+}
+
+body * a {
+  text-decoration: none;
+}
+
+body * ul {
+  list-style: none;
+}
+
+.navigation-bar {
+  background-color: transparent;
+  z-index: 9999;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.navigation-bar .logo img {
+  position: relative;
+  z-index: 999;
+  width: 100%;
+}
+
+.navigation-bar nav ul {
+  /* .service:hover {
+                .service-dropdown-menu {
+                    position: absolute;
+                }
+                .portfolio :hover {
+                    .portfolio-dropdown-menu {
+                        position: absolute;
+                    }
+                }
+            } */
+}
+
+.navigation-bar nav ul li {
+  padding-bottom: 10px;
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+  font-style: italic;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.navigation-bar nav ul li a {
+  text-transform: uppercase;
+  font-style: italic;
+  position: relative;
+  z-index: 999;
+  text-decoration: none;
+  color: #fff;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 14px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.navigation-bar nav ul li a::after {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  -webkit-transition: translate(-50%);
+  transition: translate(-50%);
+  width: 0%;
+  height: 3px;
+  content: "";
+  background-color: red;
+}
+
+.navigation-bar nav ul li a::before {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  position: absolute;
+  top: 28px;
+  right: 50%;
+  -webkit-transition: translate(-50%);
+  transition: translate(-50%);
+  width: 0%;
+  height: 3px;
+  content: "";
+  background-color: red;
+}
+
+.navigation-bar nav ul li::after {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  -webkit-transition: translate(-50%);
+  transition: translate(-50%);
+  width: 0%;
+  height: 3px;
+  content: "";
+  background-color: #be0026;
+}
+
+.navigation-bar nav ul li::before {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  position: absolute;
+  top: 28px;
+  right: 50%;
+  -webkit-transition: translate(-50%);
+  transition: translate(-50%);
+  width: 0%;
+  height: 3px;
+  content: "";
+  background-color: #be0026;
+}
+
+.navigation-bar nav ul li:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: linear-gradient(90deg, #be0026 0%, #3983c7 100%);
+}
+
+.navigation-bar nav ul li:hover::after {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  width: 60%;
+}
+
+.navigation-bar nav ul li:hover::before {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  width: 60%;
+}
+
+.navigation-bar nav ul li .service-dropdown-menu,
+.navigation-bar nav ul li .portfolio-dropdown-menu,
+.navigation-bar nav ul li .digital-marketing-dropdown-menu {
+  visibility: hidden;
+  opacity: 0;
+  width: 180px;
+  position: absolute;
+  top: 80px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navigation-bar nav ul li .service-dropdown-menu li,
+.navigation-bar nav ul li .portfolio-dropdown-menu li,
+.navigation-bar nav ul li .digital-marketing-dropdown-menu li {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding-left: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0px;
+  border-left: 3px solid transparent;
+}
+
+.navigation-bar nav ul li .service-dropdown-menu li a,
+.navigation-bar nav ul li .portfolio-dropdown-menu li a,
+.navigation-bar nav ul li .digital-marketing-dropdown-menu li a {
+  display: block;
+  padding: 10px 0px;
+}
+
+.navigation-bar nav ul li .service-dropdown-menu li i,
+.navigation-bar nav ul li .portfolio-dropdown-menu li i,
+.navigation-bar nav ul li .digital-marketing-dropdown-menu li i {
+  margin-left: 10px;
+  color: #fff;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.navigation-bar nav ul li .service-dropdown-menu li::before, .navigation-bar nav ul li .service-dropdown-menu li::after,
+.navigation-bar nav ul li .portfolio-dropdown-menu li::before,
+.navigation-bar nav ul li .portfolio-dropdown-menu li::after,
+.navigation-bar nav ul li .digital-marketing-dropdown-menu li::before,
+.navigation-bar nav ul li .digital-marketing-dropdown-menu li::after {
+  display: none;
+}
+
+.navigation-bar nav ul li .service-dropdown-menu li:hover,
+.navigation-bar nav ul li .portfolio-dropdown-menu li:hover,
+.navigation-bar nav ul li .digital-marketing-dropdown-menu li:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding-left: 20px;
+  border-left: 3px solid #3983c7;
+}
+
+.navigation-bar nav ul li .service-dropdown-menu li:hover i,
+.navigation-bar nav ul li .portfolio-dropdown-menu li:hover i,
+.navigation-bar nav ul li .digital-marketing-dropdown-menu li:hover i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.navigation-bar nav ul li .service-dropdown-menu .digital-marketing-dropdown,
+.navigation-bar nav ul li .portfolio-dropdown-menu .digital-marketing-dropdown,
+.navigation-bar nav ul li .digital-marketing-dropdown-menu .digital-marketing-dropdown {
+  padding-bottom: 10px;
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+  font-style: italic;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px 0px;
+  padding-left: 10px;
+}
+
+.navigation-bar nav ul li .service-dropdown-menu .digital-marketing-dropdown .digital-marketing-dropdown-menu,
+.navigation-bar nav ul li .portfolio-dropdown-menu .digital-marketing-dropdown .digital-marketing-dropdown-menu,
+.navigation-bar nav ul li .digital-marketing-dropdown-menu .digital-marketing-dropdown .digital-marketing-dropdown-menu {
+  position: absolute;
+  right: -180px;
+  top: 30px;
+  visibility: hidden;
+  opacity: 0;
+  width: 180px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navigation-bar nav ul li .service-dropdown-menu .digital-marketing-dropdown:hover .digital-marketing-dropdown-menu,
+.navigation-bar nav ul li .portfolio-dropdown-menu .digital-marketing-dropdown:hover .digital-marketing-dropdown-menu,
+.navigation-bar nav ul li .digital-marketing-dropdown-menu .digital-marketing-dropdown:hover .digital-marketing-dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  top: -1px;
+}
+
+.navigation-bar nav ul .service-nav:hover .service-dropdown-menu {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  visibility: visible;
+  opacity: 1;
+  top: 30px;
+}
+
+.navigation-bar nav ul .portfolio-nav:hover .portfolio-dropdown-menu {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  visibility: visible;
+  opacity: 1;
+  top: 30px;
+}
+
+/* contact */
+.contact {
+  padding-top: 50px;
+}
+
+.contact h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact .footer-address,
+.contact .footer-contact,
+.contact .footer-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 100px;
+}
+
+.contact .footer-address::after,
+.contact .footer-contact::after,
+.contact .footer-email::after {
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  width: 2px;
+  height: 100px;
+  content: "";
+  background-color: #777;
+}
+
+.contact .footer-address .footer-icon,
+.contact .footer-contact .footer-icon,
+.contact .footer-email .footer-icon {
+  margin-right: 20px;
+  font-size: 30px;
+  border-radius: 50%;
+  padding: 5px 12px;
+  background-color: #eee;
+}
+
+.contact .footer-address .fst,
+.contact .footer-contact .fst,
+.contact .footer-email .fst {
+  padding: 5px 15px;
+}
+
+.contact .footer-address .footer-details h3,
+.contact .footer-contact .footer-details h3,
+.contact .footer-email .footer-details h3 {
+  color: #111;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.contact .footer-address .footer-details p,
+.contact .footer-contact .footer-details p,
+.contact .footer-email .footer-details p {
+  font-size: 16px;
+  line-height: 30px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+/* contact end*/
+/* social-links */
+.social-links {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.social-links .footer-logo {
+  text-align: center;
+}
+
+.social-links .footer-logo img {
+  width: 30%;
+}
+
+.social-links .links {
+  text-align: center;
+  margin: 30px 0px;
+}
+
+.social-links .links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-links .links ul li {
+  border: 1px solid #000;
+  width: 30px;
+  background-color: transparent;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-right: 30px;
+}
+
+.social-links .links ul li i {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  padding: 5px;
+  font-size: 20px;
+}
+
+.social-links .links ul li:hover {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.social-links .links ul li:hover i {
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+}
+
+.social-links .copyright {
+  text-align: center;
+}
+
+.social-links .copyright p {
+  font-size: 20px;
+  word-spacing: 5p;
+}
+
+.social-links .copyright p i {
+  margin-right: 10px;
+}
+
+.social-links .copyright span {
+  word-spacing: 5px;
+  letter-spacing: 3px;
+}
+
+/* social-links end */
+/*# sourceMappingURL=header-footer.css.map */

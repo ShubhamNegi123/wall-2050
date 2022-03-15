@@ -1,0 +1,44 @@
+/* variables */
+/* mixins */
+/* Dosis fonts */
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap");
+.banner {
+  padding: 100px;
+  padding-top: 150px;
+  background-color: #111;
+  width: 100%;
+}
+
+.banner .about-heading h1 {
+  font-size: 30px;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.banner .about-heading p {
+  font-size: 16px;
+  line-height: 30px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.clients {
+  margin-top: 100px;
+}
+
+.clients h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.clients .clients-logo img {
+  width: 100%;
+}
+/*# sourceMappingURL=clients.css.map */
