@@ -1,5 +1,38 @@
 $(function () {
 
+
+
+    $('.uncover').click(function(){
+        $('.map-cover').css({
+            transition: 'all .3s ease',
+            height: '15%'
+        });
+        $('.location-icon').hide();
+        $('.uncover').hide();
+        $('.uncover-icon').hide();
+        $('.cover').show();
+    });
+
+    $('.cover').click(function(){
+        $('.map-cover').css({
+            transition: 'all .3s ease',
+            height: '100%'
+        });
+        $('.location-icon').show();
+        $('.uncover').show();
+        $('.uncover-icon').show();
+        $('.cover').hide();
+    });
+
+
+
+
+
+
+
+
+
+
     /* home slider */
     $('.client-slider').owlCarousel({
         loop: true,

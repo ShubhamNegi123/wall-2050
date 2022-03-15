@@ -1,0 +1,186 @@
+/* variables */
+$primary-color: #be0026;
+$secondary-color: #3983c7;
+$text-color: #777;
+
+/* mixins */
+@mixin h1-font {
+    font-size: 30px;
+}
+@mixin h2-font {
+    font-size: 25px;
+}
+@mixin h3-font {
+    font-size: 20px;
+}
+
+@mixin section-space {
+    margin-top: 100px;
+}
+
+@mixin p {
+    font-size: 16px;
+    line-height: 30px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+/* Dosis fonts */
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap");
+
+
+.banner {
+    /*  img{
+        width: 100%;
+    } */
+    padding: 100px;
+    padding-top: 150px;
+    background-color: #111;
+    width: 100%;
+    .about-heading {
+        h1 {
+            @include h1-font;
+            letter-spacing: 5px;
+            word-spacing: 5px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        p {
+            @include p;
+            text-transform: uppercase;
+            color: #fff;
+            margin-top: 30px;
+        }
+    }
+}
+
+
+.after-contact{
+    @include section-space;
+    h3{
+        @include h2-font;
+        margin-bottom: 30px;
+        letter-spacing: 5px;
+        word-spacing: 5px;
+    }
+    p{
+        @include p;
+        text-align: justify;
+    }
+}
+
+.form{
+    @include section-space; 
+    .inputs{
+        input{
+            width: 100%;
+            height: 30px;      
+            font-size: 14px;   
+            padding-left: 15px;   
+            font-style: italic;
+            border: 1px solid rgb(218, 215, 215);
+            margin-bottom: 20px;
+        }
+    }
+    .message{
+        textarea{
+            width: 100%;
+            height: 130px;
+            border: 1px solid rgb(218, 215, 215);
+            padding:5px 15px;
+            font-style: italic;
+        }
+    }
+    .submit{
+        margin-top: 10px;
+        button{
+            padding: 5px 20px;
+            background-color: rgba(34,34,34,.9);
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-style: italic;
+            font-weight: 500;
+            letter-spacing: 2px;
+            word-spacing: 3px;
+            outline: none;
+            border-radius: 5px;
+        }
+    }
+}
+
+/* map */
+.map {
+    @include section-space();
+    position: relative;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+    .map-cover {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(17,17,17,.93);
+        transition: all .3s ease;
+        .cover-content {
+            cursor: pointer;
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            .location-icon {
+                background-color: #fff;               
+                transform: rotate(45deg);
+                display: inline-block;
+                padding: 6px 12px;
+                i {
+                    transform: rotate(-45deg);
+                    color: #111;
+                }
+            }
+            p{
+                @include p;
+                letter-spacing: 5px;
+                word-spacing: 5px;
+                margin-top: 20px;
+                margin-bottom: 15px;
+                text-transform: uppercase;
+                text-align: center;
+                color: #fff;
+            }
+            .cover{
+                display: none;
+                p{
+                    @include p;
+                    letter-spacing: 5px;
+                    word-spacing: 5px;
+                    margin-top: 20px;
+                    margin-bottom: 15px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    color: #fff;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    /* &::after{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background-color: rgba(17,17,17,.6);
+    } */
+}
+/* map end */
+
+/*  */
