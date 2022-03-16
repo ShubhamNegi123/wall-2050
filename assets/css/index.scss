@@ -28,6 +28,16 @@ $text-color: #777;
 /* Dosis fonts */
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap");
 
+#preloader{
+    background: #000 url(../images/loading1.gif) no-repeat center;
+    background-size: 30%;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 9999999999999999;
+}
+
+
 header {
     /* slider */
     .main-slider {
