@@ -3,7 +3,7 @@
         <div class="col-lg-3">
             <!-- website logo -->
             <div class="logo">
-               <a href="index.html"> <img src="assets/images/logo.png" alt="logo"></a>
+                <a href="index.html"> <img src="assets/images/logo.png" alt="logo"></a>
             </div>
         </div>
         <!-- navigation bar -->
@@ -17,18 +17,27 @@
 
                     <li class="service-nav">Service
                         <ul class="service-dropdown-menu">
-                            <li><a href="designing.html">Designing</a></li><!--Designing  design.html -->
-                            <li><a href="web-development.html">Web Designing</a></li><!--Digital marketing digital.html -->
-                            <li class="digital-marketing-dropdown">Digital Marketing <i class="fa-solid fa-angle-down"></i>
+                            <li><a href="designing.html">Designing</a></li>
+                            <!--Designing  design.html -->
+                            <li><a href="web-development.html">Web Designing</a></li>
+                            <!--Digital marketing digital.html -->
+                            <li class="digital-marketing-dropdown">Digital Marketing <i
+                                    class="fa-solid fa-angle-down"></i>
                                 <ul class="digital-marketing-dropdown-menu">
-                                    <li><a href="">SEO</a></li><!--Printing  printing.html -->
-                                    <li><a href="">SMO</a></li><!--Printing  printing.html -->
-                                    <li><a href="">SMM</a></li><!--Event / Exhibition  event.html -->
-                                    <li><a href="">Google Ad</a></li><!--Skill training  skill.html -->
-                                    <li><a href="">Youtube Ad</a></li><!--Skill training  skill.html -->
-                                    <li><a href="">Email Marketing</a></li><!--Skill training  skill.html -->
-                                </ul>  
-                            </li>                         
+                                    <li><a href="">SEO</a></li>
+                                    <!--Printing  printing.html -->
+                                    <li><a href="">SMO</a></li>
+                                    <!--Printing  printing.html -->
+                                    <li><a href="">SMM</a></li>
+                                    <!--Event / Exhibition  event.html -->
+                                    <li><a href="">Google Ad</a></li>
+                                    <!--Skill training  skill.html -->
+                                    <li><a href="">Youtube Ad</a></li>
+                                    <!--Skill training  skill.html -->
+                                    <li><a href="">Email Marketing</a></li>
+                                    <!--Skill training  skill.html -->
+                                </ul>
+                            </li>
                         </ul>
                     </li>
 
@@ -36,11 +45,16 @@
                         Portfolio
                         <ul class="portfolio-dropdown-menu">
                             <li><a href="">Logos</a></li><!-- portfolio-tiles-four-column.html -->
-                            <li><a href="">Poster / Banner</a></li><!--Adv & Posters advposters.html -->
-                            <li><a href="">Packaging</a></li><!--Packaging packaging.html -->
-                            <li><a href="">Brochure & Catalogue</a></li><!--Brochure & Catalogue brocher.html -->
-                            <li><a href="">Web</a></li><!--Exhibition Stalls exihibition.html -->
-                            <li><a href="">Other</a></li><!--Kids Albums & Folder kids.html -->
+                            <li><a href="">Poster / Banner</a></li>
+                            <!--Adv & Posters advposters.html -->
+                            <li><a href="">Packaging</a></li>
+                            <!--Packaging packaging.html -->
+                            <li><a href="">Brochure & Catalogue</a></li>
+                            <!--Brochure & Catalogue brocher.html -->
+                            <li><a href="">Web</a></li>
+                            <!--Exhibition Stalls exihibition.html -->
+                            <li><a href="">Other</a></li>
+                            <!--Kids Albums & Folder kids.html -->
                             <!--<li><a href=""></a></li> Other others.html -->
                         </ul>
                     </li>
@@ -53,3 +67,70 @@
         </div>
     </div>
 </div>
+
+<div class="fixed-social-icons">
+    <i class="fa-solid fa-share-nodes"></i>
+    <div class="tootle-icons">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+    </div>
+</div>
+
+
+<div class="contact-icon">
+    <i class="fa-solid fa-comment-sms"></i>
+    <i class="fa-solid fa-xmark"></i>
+
+    <div class="contact-popup">
+        <p>Please fill out the form below and we will get back to you as soon as possible.</p>
+        <form action="">
+            <input type="text" name="Name" placeholder="Name">
+            <input type="text" name="Email" placeholder="Email">
+            <textarea name="" id="" cols="" rows="" placeholder="message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+    $('.fa-share-nodes').mouseout(function () {
+        setTimeout(() => {
+            $('.fa-facebook').css({
+                left: '-100px',
+                transition: 'all .3s ease'
+            });
+            $('.fa-instagram-square').css({
+                left: '-100px',
+                transition: 'all .5s ease'
+            });
+        }, 2000);
+    });
+
+    $('.fa-share-nodes').mouseover(function () {
+        $('.fa-facebook').css({
+            left: '0px',
+            transition: 'all .5s ease'
+        });
+        $('.fa-instagram-square').css({
+            left: '0px',
+            transition: 'all .3s ease'
+        });
+
+    });   
+</script>
+<script>
+    $('.fa-comment-sms').click(function(){
+             
+        $('.contact-popup').slideToggle(500);
+
+    });
+
+</script>
