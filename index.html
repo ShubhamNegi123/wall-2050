@@ -50,10 +50,13 @@
         $(function () {
             $("footer").load("footer.html");
         });
-    </script>
+    </script>    
 </head>
 
 <body>
+    <!-- preloader -->
+    <div id="preloader"></div>
+
     <!-- header -->
     <div class="navigation-bar"></div>
     <header>
@@ -192,7 +195,14 @@
     </section>
     <!-- about section end -->
 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
     <!-- SERVICES -->
     <section class="service">
         <div class="container">
@@ -710,6 +720,14 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
  <script src="assets/js/index.js"></script>
  <script src="assets/js/header-footer.js"></script>
+ 
+<script>
+    let loader = document.getElementById('preloader');
+    window.addEventListener('load',function(){
+        loader.style.display = 'none'
+    })
+</script>
+
  <script>
      AOS.init({
          offset: 220,
