@@ -1,0 +1,96 @@
+/* variables */
+$primary-color: #be0026;
+$secondary-color: #3983c7;
+$text-color: #777;
+
+/* mixins */
+@mixin h1-font {
+    font-size: 30px;
+}
+@mixin h2-font {
+    font-size: 25px;
+}
+@mixin h3-font {
+    font-size: 20px;
+}
+
+@mixin section-space {
+    margin-top: 100px;
+}
+
+@mixin p {
+    font-size: 16px;
+    line-height: 30px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+/* Dosis fonts */
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap");
+
+.banner {
+    padding: 100px;
+    padding-top: 150px;
+    background-color: #111;
+    width: 100%;
+    .about-heading {
+        h1 {
+            @include h1-font;
+            letter-spacing: 5px;
+            word-spacing: 5px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        p {
+            @include p;
+            text-transform: uppercase;
+            color: #fff;
+            margin-top: 30px;
+        }
+    }
+}
+
+.career-content {
+    @include section-space();
+    h2 {
+        margin-top: 50px;
+        letter-spacing: 5px;
+        word-spacing: 5px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        @include h2-font;
+    }
+    p {
+        @include p;
+        text-align: justify;
+        font-style: italic;
+    }
+}
+
+.values {
+    @include section-space();
+    h2 {
+        @include h2-font();
+        text-transform: uppercase;
+        word-spacing: 5px;
+        letter-spacing: 5px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .value-card {
+        text-align: center;
+        i {
+            padding: 10px;
+            font-size: 50px;
+        }
+        h3 {
+            margin-top: 20px;
+            font-size: 16px;
+            text-transform: uppercase;
+            word-spacing: 5px;
+            letter-spacing: 5px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    }
+}

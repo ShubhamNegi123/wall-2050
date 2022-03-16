@@ -17,7 +17,6 @@ $(function () {
         var scroll = $(window).scrollTop();
         var h = window.innerHeight;
         if (scroll >= h) {
-
             
             $('.navigation-bar').css({
                 backgroundColor: '#fff',
@@ -45,9 +44,7 @@ $(function () {
 
            
 
-
         } else {
-
 
             $('.navigation-bar').css({
                 backgroundColor: 'transparent',
@@ -75,10 +72,6 @@ $(function () {
             });
         }
     });
-
-
-
-
 
 
 

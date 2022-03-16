@@ -45,6 +45,115 @@ body {
         }
     }
 }
+.contact-icon{
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    .fa-xmark{
+        display: none;
+        padding: 15px 19px;
+        color: #fff;
+        background-color: #111;
+        border-radius: 50%;
+        font-size: 25px;
+        cursor: pointer; 
+    }
+    .fa-comment-sms{
+        padding: 15px;
+        color: #fff;
+        background-color: #111;
+        border-radius: 50%;
+        font-size: 25px;
+        cursor: pointer; 
+    }
+    .contact-popup{
+        display: none;
+        width: 320px;
+        position: fixed;
+        right: 10px;
+        bottom: 10%;
+        background-color: #eee;
+        p{
+            background-color: #111;
+            padding: 20px;
+            padding-bottom: 40px;
+            color: #fff;
+            text-align: center;
+        }
+        form{
+            margin: 20px;
+            border-left: 5px solid #000;
+            border-radius: 5px;
+            background-color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: -20px;
+            input{
+                width: 90%;
+                padding-left: 15px;
+                margin-bottom: 15px;
+                height: 35px;
+                border-radius: 5px;
+                border: 2px solid #eee;
+            }
+            textarea{
+                width: 90%;
+                height: 65px;
+                resize: none;
+                border: 2px solid #eee;
+                margin-bottom: 20px;                
+                padding-left: 15px;
+            }
+            button{
+                width: 90%;
+                padding: 5px 0px;
+                background-color: #111;
+                color: #fff;
+                font-weight: bold;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+
+.fixed-social-icons {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    .fa-share-nodes {
+        padding: 15px;
+        color: #fff;
+        background-color: #111;
+        border-radius: 50%;
+        font-size: 25px;
+        cursor: pointer;       
+    }
+    .tootle-icons {     
+        i {
+            position: absolute;
+            bottom: 80px;
+            left: 0px;
+            padding: 15px;
+            color: #fff;
+            background-color: #111;
+            border-radius: 50%;
+            font-size: 25px;
+            margin-top: 20px;
+        }
+        .fa-instagram-square{
+            left: -100px;
+            transition: all .3s ease;
+        }
+        .fa-facebook{
+            bottom: 160px;
+            left: -100px;
+            transition: all .5s ease;
+        }
+    }
+}
 
 .navigation-bar {
     background-color: transparent;
@@ -167,7 +276,7 @@ body {
                             margin-left: 10px;
                             color: #fff;
                             transform: rotate(0deg);
-                            transition:  all .2s ease;
+                            transition: all 0.2s ease;
                         }
                         &::before,
                         &::after {
@@ -177,9 +286,9 @@ body {
                             transition: all 0.3s ease;
                             padding-left: 20px;
                             border-left: 3px solid $secondary-color;
-                            i {                               
+                            i {
                                 transform: rotate(180deg);
-                                transition:  all .2s ease;
+                                transition: all 0.2s ease;
                             }
                         }
                     }
