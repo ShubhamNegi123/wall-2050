@@ -31,11 +31,11 @@ html {
   scroll-behavior: smooth;
 }
 
-.seo-content {
+.smo-content {
   margin-top: 100px;
 }
 
-.seo-content h2 {
+.smo-content h2 {
   margin-top: 50px;
   letter-spacing: 5px;
   word-spacing: 5px;
@@ -44,7 +44,7 @@ html {
   font-size: 25px;
 }
 
-.seo-content p {
+.smo-content p {
   font-size: 16px;
   line-height: 30px;
   word-spacing: 2px;
@@ -53,19 +53,19 @@ html {
   font-style: italic;
 }
 
-.seo-packages {
+.smo-packages {
   padding: 30px 0px;
   margin-top: 100px;
   background-color: #eee;
 }
 
-.seo-packages .packages-wrapper {
+.smo-packages .packages-wrapper {
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   overflow: hidden;
 }
 
-.seo-packages h2 {
+.smo-packages h2 {
   margin-bottom: 10px;
   letter-spacing: 5px;
   word-spacing: 5px;
@@ -75,14 +75,14 @@ html {
   text-align: center;
 }
 
-.seo-packages .main-table {
+.smo-packages .main-table {
   background-color: #3983c7;
   padding: 5px;
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.seo-packages .main-table th {
+.smo-packages .main-table th {
   padding: 10px 0px;
   text-align: center;
   color: #fff;
@@ -91,16 +91,16 @@ html {
   border-bottom: 1px solid #fff;
 }
 
-.seo-packages .main-table th i {
+.smo-packages .main-table th i {
   color: #fff;
 }
 
-.seo-packages .main-table th:first-child {
+.smo-packages .main-table th:first-child {
   text-align-last: left;
   padding-left: 15px;
 }
 
-.seo-packages .main-table td {
+.smo-packages .main-table td {
   padding: 10px 0px;
   text-align: center;
   color: #fff;
@@ -109,7 +109,7 @@ html {
   border-bottom: 1px solid #fff;
 }
 
-.seo-packages .main-table td a {
+.smo-packages .main-table td a {
   color: #fff;
   font-weight: bold;
   border-radius: 5px;
@@ -118,10 +118,10 @@ html {
   cursor: pointer;
 }
 
-.seo-packages .on-page-activities h3,
-.seo-packages .content-writing h3,
-.seo-packages .off-page h3,
-.seo-packages .monthly-report h3 {
+.smo-packages .on-page-activities h3,
+.smo-packages .content-writing h3,
+.smo-packages .off-page h3,
+.smo-packages .monthly-report h3 {
   position: relative;
   padding: 5px 0px;
   letter-spacing: 5px;
@@ -137,40 +137,40 @@ html {
   cursor: pointer;
 }
 
-.seo-packages .on-page-activities h3 i,
-.seo-packages .content-writing h3 i,
-.seo-packages .off-page h3 i,
-.seo-packages .monthly-report h3 i {
+.smo-packages .on-page-activities h3 i,
+.smo-packages .content-writing h3 i,
+.smo-packages .off-page h3 i,
+.smo-packages .monthly-report h3 i {
   color: #fff;
 }
 
-.seo-packages .on-page-activities ul,
-.seo-packages .content-writing ul,
-.seo-packages .off-page ul,
-.seo-packages .monthly-report ul {
+.smo-packages .on-page-activities ul,
+.smo-packages .content-writing ul,
+.smo-packages .off-page ul,
+.smo-packages .monthly-report ul {
   display: none;
 }
 
-.seo-packages .on-page-activities ul .outer-list:nth-child(2n),
-.seo-packages .content-writing ul .outer-list:nth-child(2n),
-.seo-packages .off-page ul .outer-list:nth-child(2n),
-.seo-packages .monthly-report ul .outer-list:nth-child(2n) {
+.smo-packages .on-page-activities ul .outer-list:nth-child(2n),
+.smo-packages .content-writing ul .outer-list:nth-child(2n),
+.smo-packages .off-page ul .outer-list:nth-child(2n),
+.smo-packages .monthly-report ul .outer-list:nth-child(2n) {
   background-color: #e6e3e3;
 }
 
-.seo-packages .on-page-activities ul .outer-list ul,
-.seo-packages .content-writing ul .outer-list ul,
-.seo-packages .off-page ul .outer-list ul,
-.seo-packages .monthly-report ul .outer-list ul {
+.smo-packages .on-page-activities ul .outer-list ul,
+.smo-packages .content-writing ul .outer-list ul,
+.smo-packages .off-page ul .outer-list ul,
+.smo-packages .monthly-report ul .outer-list ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.seo-packages .on-page-activities ul .outer-list ul li,
-.seo-packages .content-writing ul .outer-list ul li,
-.seo-packages .off-page ul .outer-list ul li,
-.seo-packages .monthly-report ul .outer-list ul li {
+.smo-packages .on-page-activities ul .outer-list ul li,
+.smo-packages .content-writing ul .outer-list ul li,
+.smo-packages .off-page ul .outer-list ul li,
+.smo-packages .monthly-report ul .outer-list ul li {
   width: 25%;
   text-align: center;
   /* border: 1px solid rgba(191, 0, 38,0.1); */
@@ -181,53 +181,53 @@ html {
   font-weight: bold;
 }
 
-.seo-packages .on-page-activities ul .outer-list ul li:first-child,
-.seo-packages .content-writing ul .outer-list ul li:first-child,
-.seo-packages .off-page ul .outer-list ul li:first-child,
-.seo-packages .monthly-report ul .outer-list ul li:first-child {
+.smo-packages .on-page-activities ul .outer-list ul li:first-child,
+.smo-packages .content-writing ul .outer-list ul li:first-child,
+.smo-packages .off-page ul .outer-list ul li:first-child,
+.smo-packages .monthly-report ul .outer-list ul li:first-child {
   text-align: left;
   padding-left: 15px;
 }
 
-.seo-packages .on-page-activities ul .outer-list ul li i,
-.seo-packages .content-writing ul .outer-list ul li i,
-.seo-packages .off-page ul .outer-list ul li i,
-.seo-packages .monthly-report ul .outer-list ul li i {
+.smo-packages .on-page-activities ul .outer-list ul li i,
+.smo-packages .content-writing ul .outer-list ul li i,
+.smo-packages .off-page ul .outer-list ul li i,
+.smo-packages .monthly-report ul .outer-list ul li i {
   font-size: 20px;
 }
 
-.seo-packages .on-page-activities ul .outer-list ul li .fa-circle-check,
-.seo-packages .content-writing ul .outer-list ul li .fa-circle-check,
-.seo-packages .off-page ul .outer-list ul li .fa-circle-check,
-.seo-packages .monthly-report ul .outer-list ul li .fa-circle-check {
+.smo-packages .on-page-activities ul .outer-list ul li .fa-circle-check,
+.smo-packages .content-writing ul .outer-list ul li .fa-circle-check,
+.smo-packages .off-page ul .outer-list ul li .fa-circle-check,
+.smo-packages .monthly-report ul .outer-list ul li .fa-circle-check {
   color: #3983c7;
 }
 
-.seo-packages .on-page-activities ul .outer-list ul li .fa-circle-xmark,
-.seo-packages .content-writing ul .outer-list ul li .fa-circle-xmark,
-.seo-packages .off-page ul .outer-list ul li .fa-circle-xmark,
-.seo-packages .monthly-report ul .outer-list ul li .fa-circle-xmark {
+.smo-packages .on-page-activities ul .outer-list ul li .fa-circle-xmark,
+.smo-packages .content-writing ul .outer-list ul li .fa-circle-xmark,
+.smo-packages .off-page ul .outer-list ul li .fa-circle-xmark,
+.smo-packages .monthly-report ul .outer-list ul li .fa-circle-xmark {
   color: #bf0026;
 }
 
-.seo-packages .on-page-activities ul .click-list,
-.seo-packages .content-writing ul .click-list,
-.seo-packages .off-page ul .click-list,
-.seo-packages .monthly-report ul .click-list {
+.smo-packages .on-page-activities ul .click-list,
+.smo-packages .content-writing ul .click-list,
+.smo-packages .off-page ul .click-list,
+.smo-packages .monthly-report ul .click-list {
   margin: 10px 0px;
 }
 
-.seo-packages .on-page-activities ul .click-list ul li,
-.seo-packages .content-writing ul .click-list ul li,
-.seo-packages .off-page ul .click-list ul li,
-.seo-packages .monthly-report ul .click-list ul li {
+.smo-packages .on-page-activities ul .click-list ul li,
+.smo-packages .content-writing ul .click-list ul li,
+.smo-packages .off-page ul .click-list ul li,
+.smo-packages .monthly-report ul .click-list ul li {
   border: none;
 }
 
-.seo-packages .on-page-activities ul .click-list ul li span,
-.seo-packages .content-writing ul .click-list ul li span,
-.seo-packages .off-page ul .click-list ul li span,
-.seo-packages .monthly-report ul .click-list ul li span {
+.smo-packages .on-page-activities ul .click-list ul li span,
+.smo-packages .content-writing ul .click-list ul li span,
+.smo-packages .off-page ul .click-list ul li span,
+.smo-packages .monthly-report ul .click-list ul li span {
   font-weight: bold;
   color: #fff;
   font-weight: bold;
@@ -237,17 +237,17 @@ html {
   cursor: pointer;
 }
 
-.seo-packages .on-page-activities ul .click-list ul li:first-child span,
-.seo-packages .content-writing ul .click-list ul li:first-child span,
-.seo-packages .off-page ul .click-list ul li:first-child span,
-.seo-packages .monthly-report ul .click-list ul li:first-child span {
+.smo-packages .on-page-activities ul .click-list ul li:first-child span,
+.smo-packages .content-writing ul .click-list ul li:first-child span,
+.smo-packages .off-page ul .click-list ul li:first-child span,
+.smo-packages .monthly-report ul .click-list ul li:first-child span {
   padding: 0px;
   background-color: #eee;
   border: none;
   color: #777;
 }
 
-.seo-packages .on-page-activities ul {
+.smo-packages .on-page-activities ul {
   display: block;
 }
 
@@ -332,4 +332,4 @@ html {
   border-radius: 5px;
   color: #fff;
 }
-/*# sourceMappingURL=seo.css.map */
+/*# sourceMappingURL=smo.css.map */

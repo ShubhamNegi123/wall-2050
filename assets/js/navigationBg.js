@@ -3,7 +3,6 @@ $(function(){
         var scroll = $(window).scrollTop();
         var h = $(".banner").height();
         if (scroll >= h) {
-
             
             $('.navigation-bar').css({
                 backgroundColor: '#fff',
@@ -20,6 +19,11 @@ $(function(){
                 backgroundColor: '#fff',
                 boxShadow: 'rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px'          
             });
+
+            $('.navigation-bar nav ul li .service-dropdown-menu .digital-marketing-dropdown a i').css({
+               color : '#000'
+            });
+
             $('.digital-marketing-dropdown-menu').css({
                 backgroundColor: '#fff',
                 boxShadow: 'rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px'          

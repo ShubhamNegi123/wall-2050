@@ -168,7 +168,6 @@ $text-color: #777;
         @include h2-font;
         letter-spacing: 5px;
         word-spacing: 5px;
-        margin-bottom: 30px;
         text-transform: uppercase;
         text-align: center;
         color: #fff;
@@ -179,6 +178,8 @@ $text-color: #777;
         position: relative;
         bottom: -50px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px;
+        overflow: hidden;
         tr {
             &:last-child td {
                 padding: 5px;
@@ -202,8 +203,6 @@ $text-color: #777;
             td {
                 background-color: #fff;
                 color: #777;
-                border-right: 1px solid #000;
-                border-bottom: 1px dotted #000;
                 &:first-child {
                     text-transform: uppercase;
                     font-weight: bold;
