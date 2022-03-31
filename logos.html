@@ -8,15 +8,13 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <meta name="description" content=" Brochure designing in Delhi ,brochure printing in Delhi,Catalogue designing in Delhi, Catalogue Printing in Delhi,Logo designing in Delhi,Stall designing in Delhi,Stall Fabrication in Delhi, Designing & Printing Services in Delhi
 ,Packaging Designing in Delhi,Creative agency in Delhi ">
     <meta name="keywords" content=" Brochure designing in Delhi ,brochure printing in Delhi,Catalogue designing in Delhi, Catalogue Printing in Delhi,Logo designing in Delhi,Stall designing in Delhi,Stall Fabrication in Delhi, Designing & Printing Services in Delhi
 ,Packaging Designing in Delhi,Creative agency in Delhi ">
     <meta name="author" content=" Brochure designing in Delhi ,brochure printing in Delhi,Catalogue designing in Delhi, Catalogue Printing in Delhi,Logo designing in Delhi,Stall designing in Delhi,Stall Fabrication in Delhi, Designing & Printing Services in Delhi
 ,Packaging Designing in Delhi,Creative agency in Delhi ">
-
-    <title>Website designing in delhi - Wall Communication </title>
+    <title>Logos - Wall Communication </title>
 
     <!--  bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap-5.1/bootstrap.min.css">
@@ -51,7 +49,7 @@
         <!--  <img src="assets/images/about-page-banner.jpg" alt="about-us-banner"> -->
         <div class="container">
             <div class="about-heading">
-                <h1>website designing</h1>
+                <h1>search engine optimization</h1>
                 <p> Design House providing best multimedia solutions!</p>
             </div>
         </div>
@@ -59,60 +57,68 @@
 
     <section class="logos">
         <div class="container">
-            <h1>Websites</h1>
+            <h1>Logos</h1>
         </div>
         <div class="logos-images">
             <div class="row">
 
-                <div class="col-lg-4 gx-0">
+                <div class="col-lg-3 gx-0">
                     <div class="links">
-                        <a target="blank" href="https://amgglobaltrading.com/">
-                            <img src="assets/images/website-AMG.jpg" alt="logos">
-                        </a>
+                        <img src="assets/images/dmbg1.png" alt="logos">
                     </div>
                 </div>
 
-                <div class="col-lg-4 gx-0">
+                <div class="col-lg-3 gx-0">
                     <div class="links">
-                        <a target="blank" href="">
-                            <img src="assets/images/website-ASM.jpg" alt="logos">
-                        </a>
+                        <img src="assets/images/dmbg2.jpg" alt="logos">
                     </div>
                 </div>
 
-                <div class="col-lg-4 gx-0">
+                <div class="col-lg-3 gx-0">
                     <div class="links">
-                        <a target="blank" href="">
-                            <img src="assets/images/website-ASPM.jpg" alt="logos">
-                        </a>
+                        <img src="assets/images/dmbg3.png" alt="logos">
                     </div>
                 </div>
 
-                <div class="col-lg-4 gx-0">
+                <div class="col-lg-3 gx-0">
                     <div class="links">
-                        <a target="blank" href="">
-                            <img src="assets/images/website-BLS.jpg" alt="logos">
-                        </a>
+                        <img src="assets/images/dmbg1.png" alt="logos">
                     </div>
                 </div>
 
-                <div class="col-lg-4 gx-0">
+                <div class="col-lg-3 gx-0">
                     <div class="links">
-                        <a target="blank" href="">
-                            <img src="assets/images/website-Divine.jpg" alt="logos">
-                        </a>
+                        <img src="assets/images/gd1.png" alt="logos">
                     </div>
                 </div>
 
-                <div class="col-lg-4 gx-0">
+                <div class="col-lg-3 gx-0">
                     <div class="links">
-                        <a target="blank" href="https://www.woggroup.com/">
-                            <img src="assets/images/website-WOG.jpg" alt="logos">
-                        </a>
+                        <img src="assets/images/gd2.png" alt="logos">
                     </div>
                 </div>
+
+                <div class="col-lg-3 gx-0">
+                    <div class="links">
+                        <img src="assets/images/dmbg1.png" alt="logos">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 gx-0">
+                    <div class="links">
+                        <img src="assets/images/gd3.jpg" alt="logos">
+                    </div>
+                </div>
+
 
             </div>
+        </div>
+    </section>
+
+    <section class="model-image-wrapper">
+        <div class="model-image">
+            <i class="fa-solid fa-circle-xmark"></i>
+            <img src="assets/images/AMG/2.jpg" alt="model-image">
         </div>
     </section>
 
@@ -122,7 +128,28 @@
     <script src="assets/js/navigationBg.js"></script>
     <script src="assets/js/seo.js"></script>
     <script src="assets/js/packages-form.js"></script>
+    <script>
+        $(function () {
 
+            $('.logos .links img').click(function () {
+                let img = $(this).attr('src');
+                $('.model-image img').attr('src', img);
+                $('.model-image-wrapper').css({
+                    display: 'flex'
+                });
+            });
+
+
+
+            $('.model-image-wrapper .fa-circle-xmark').click(function () {
+                $('.model-image-wrapper').css({
+                    display: 'none'
+                });
+            });
+
+
+        });
+    </script>
 
 </body>
 

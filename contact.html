@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content=" Brochure designing in Delhi ,brochure printing in Delhi,Catalogue designing in Delhi, Catalogue Printing in Delhi,Logo designing in Delhi,Stall designing in Delhi,Stall Fabrication in Delhi, Designing & Printing Services in Delhi
         ,Packaging Designing in Delhi,Creative agency in Delhi ">
     <meta name="keywords" content=" Brochure designing in Delhi ,brochure printing in Delhi,Catalogue designing in Delhi, Catalogue Printing in Delhi,Logo designing in Delhi,Stall designing in Delhi,Stall Fabrication in Delhi, Designing & Printing Services in Delhi
         ,Packaging Designing in Delhi,Creative agency in Delhi ">
     <meta name="author" content=" Brochure designing in Delhi ,brochure printing in Delhi,Catalogue designing in Delhi, Catalogue Printing in Delhi,Logo designing in Delhi,Stall designing in Delhi,Stall Fabrication in Delhi, Designing & Printing Services in Delhi
         ,Packaging Designing in Delhi,Creative agency in Delhi ">
-    <title>Wall Communication </title>
+    <title>Contact us - Wall Communication </title>
 
 
 
@@ -131,7 +131,31 @@
 
     <script src="assets/js/header-footer.js"></script>
     <script src="assets/js/navigationBg.js"></script>
-
+    <script>
+        
+        $('.uncover').click(function(){
+            $('.map-cover').css({
+                transition: 'all .3s ease',
+                height: '15%'
+            });
+            $('.location-icon').hide();
+            $('.uncover').hide();
+            $('.uncover-icon').hide();
+            $('.cover').show();
+        });
+    
+        $('.cover').click(function(){
+            $('.map-cover').css({
+                transition: 'all .3s ease',
+                height: '100%'
+            });
+            $('.location-icon').show();
+            $('.uncover').show();
+            $('.uncover-icon').show();
+            $('.cover').hide();
+        });
+    
+        </script>
 </body>
 
 </html>
