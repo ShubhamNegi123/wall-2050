@@ -1,0 +1,115 @@
+/* variables */
+$primary-color: rgb(191, 0, 38);
+$secondary-color: #3983c7;
+$text-color: #777;
+
+/* mixins */
+@mixin h1-font {
+    font-size: 30px;
+}
+@mixin h2-font {
+    font-size: 25px;
+}
+@mixin h3-font {
+    font-size: 20px;
+}
+
+@mixin section-space {
+    margin-top: 100px;
+}
+
+@mixin p {
+    font-size: 16px;
+    line-height: 30px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+/* Dosis fonts */
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap");
+
+
+.banner {
+    padding: 100px;
+    padding-top: 150px;
+    background-color: #111;
+    width: 100%;
+    .about-heading {
+        h1 {
+            @include h1-font;
+            letter-spacing: 5px;
+            word-spacing: 5px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        p {
+            @include p;
+            text-transform: uppercase;
+            color: #fff;
+            margin-top: 30px;
+        }
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.logos{
+    overflow: hidden;
+    h1{
+        margin-top: 50px;
+        letter-spacing: 5px;
+        word-spacing: 5px;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        @include h1-font;
+        text-align: center;
+    }
+    .logos-images{
+        .links{
+            overflow: hidden;
+            img{
+                max-width: 100%;
+                width: 100%;                    
+                transition: all .3s ease;
+                &:hover{
+                    transform: scale(1.1);
+                    transition: all .3s ease;
+                }
+            }
+        }
+    }
+}
+
+.model-image-wrapper{
+    position: fixed;
+    background-color: rgba(57, 131, 199,0.7);
+    top: 0px;
+    left: 0px;
+    max-width: 100vw;
+    width: 100%;
+    max-height: 100vh;
+    height: 100%;
+    overflow: hidden;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    display: none;
+    .model-image{   
+        position: relative;          
+        width: 35%;       
+        .fa-circle-xmark{
+            color: #fff;
+            font-size: 30px;
+            cursor: pointer;
+            position: absolute;
+            top: -30px;
+            right: -30px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}

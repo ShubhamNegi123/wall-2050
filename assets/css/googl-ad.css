@@ -29,10 +29,10 @@ html {
   scroll-behavior: smooth;
 }
 
-.smo-content {
+.google-ad-content {
   margin-top: 100px;
 }
-.smo-content h2 {
+.google-ad-content h2 {
   margin-top: 50px;
   letter-spacing: 5px;
   word-spacing: 5px;
@@ -40,7 +40,7 @@ html {
   text-transform: uppercase;
   font-size: 25px;
 }
-.smo-content p {
+.google-ad-content p {
   font-size: 16px;
   line-height: 30px;
   word-spacing: 2px;
@@ -49,16 +49,16 @@ html {
   font-style: italic;
 }
 
-.smo-packages {
+.google-ad-packages {
   padding: 30px 0px;
   margin-top: 100px;
   background-color: #eee;
 }
-.smo-packages .packages-wrapper {
+.google-ad-packages .packages-wrapper {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   overflow: hidden;
 }
-.smo-packages h2 {
+.google-ad-packages h2 {
   margin-bottom: 10px;
   letter-spacing: 5px;
   word-spacing: 5px;
@@ -67,13 +67,13 @@ html {
   font-size: 25px;
   text-align: center;
 }
-.smo-packages .main-table {
+.google-ad-packages .main-table {
   background-color: #3983c7;
   padding: 5px;
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
-.smo-packages .main-table th {
+.google-ad-packages .main-table th {
   padding: 10px 0px;
   text-align: center;
   color: #fff;
@@ -81,14 +81,14 @@ html {
   width: 25%;
   border-bottom: 1px solid #fff;
 }
-.smo-packages .main-table th i {
+.google-ad-packages .main-table th i {
   color: #fff;
 }
-.smo-packages .main-table th:first-child {
+.google-ad-packages .main-table th:first-child {
   text-align: left;
   padding-left: 15px;
 }
-.smo-packages .main-table td {
+.google-ad-packages .main-table td {
   padding: 10px 0px;
   text-align: center;
   color: #fff;
@@ -96,7 +96,7 @@ html {
   width: 25%;
   border-bottom: 1px solid #fff;
 }
-.smo-packages .main-table td a {
+.google-ad-packages .main-table td a {
   color: #fff;
   font-weight: bold;
   border-radius: 5px;
@@ -104,14 +104,14 @@ html {
   background-color: #bf0026;
   cursor: pointer;
 }
-.smo-packages .main-table td:first-child {
+.google-ad-packages .main-table td:first-child {
   text-align: left;
   padding-left: 15px;
 }
-.smo-packages .on-page-activities h3,
-.smo-packages .content-writing h3,
-.smo-packages .off-page h3,
-.smo-packages .monthly-report h3 {
+.google-ad-packages .on-page-activities h3,
+.google-ad-packages .content-writing h3,
+.google-ad-packages .off-page h3,
+.google-ad-packages .monthly-report h3 {
   position: relative;
   padding: 5px 0px;
   letter-spacing: 5px;
@@ -125,34 +125,34 @@ html {
   transition: all 0.3s ease;
   cursor: pointer;
 }
-.smo-packages .on-page-activities h3 i,
-.smo-packages .content-writing h3 i,
-.smo-packages .off-page h3 i,
-.smo-packages .monthly-report h3 i {
+.google-ad-packages .on-page-activities h3 i,
+.google-ad-packages .content-writing h3 i,
+.google-ad-packages .off-page h3 i,
+.google-ad-packages .monthly-report h3 i {
   color: #fff;
 }
-.smo-packages .on-page-activities ul,
-.smo-packages .content-writing ul,
-.smo-packages .off-page ul,
-.smo-packages .monthly-report ul {
+.google-ad-packages .on-page-activities ul,
+.google-ad-packages .content-writing ul,
+.google-ad-packages .off-page ul,
+.google-ad-packages .monthly-report ul {
   display: none;
 }
-.smo-packages .on-page-activities ul .outer-list:nth-child(2n),
-.smo-packages .content-writing ul .outer-list:nth-child(2n),
-.smo-packages .off-page ul .outer-list:nth-child(2n),
-.smo-packages .monthly-report ul .outer-list:nth-child(2n) {
+.google-ad-packages .on-page-activities ul .outer-list:nth-child(2n),
+.google-ad-packages .content-writing ul .outer-list:nth-child(2n),
+.google-ad-packages .off-page ul .outer-list:nth-child(2n),
+.google-ad-packages .monthly-report ul .outer-list:nth-child(2n) {
   background-color: #e6e3e3;
 }
-.smo-packages .on-page-activities ul .outer-list ul,
-.smo-packages .content-writing ul .outer-list ul,
-.smo-packages .off-page ul .outer-list ul,
-.smo-packages .monthly-report ul .outer-list ul {
+.google-ad-packages .on-page-activities ul .outer-list ul,
+.google-ad-packages .content-writing ul .outer-list ul,
+.google-ad-packages .off-page ul .outer-list ul,
+.google-ad-packages .monthly-report ul .outer-list ul {
   display: flex;
 }
-.smo-packages .on-page-activities ul .outer-list ul li,
-.smo-packages .content-writing ul .outer-list ul li,
-.smo-packages .off-page ul .outer-list ul li,
-.smo-packages .monthly-report ul .outer-list ul li {
+.google-ad-packages .on-page-activities ul .outer-list ul li,
+.google-ad-packages .content-writing ul .outer-list ul li,
+.google-ad-packages .off-page ul .outer-list ul li,
+.google-ad-packages .monthly-report ul .outer-list ul li {
   text-transform: capitalize;
   width: 25%;
   text-align: center;
@@ -166,54 +166,54 @@ html {
   justify-content: center;
   align-items: center;
 }
-.smo-packages .on-page-activities ul .outer-list ul li:first-child,
-.smo-packages .content-writing ul .outer-list ul li:first-child,
-.smo-packages .off-page ul .outer-list ul li:first-child,
-.smo-packages .monthly-report ul .outer-list ul li:first-child {
+.google-ad-packages .on-page-activities ul .outer-list ul li:first-child,
+.google-ad-packages .content-writing ul .outer-list ul li:first-child,
+.google-ad-packages .off-page ul .outer-list ul li:first-child,
+.google-ad-packages .monthly-report ul .outer-list ul li:first-child {
   text-align: left;
   padding-left: 15px;
 }
-.smo-packages .on-page-activities ul .outer-list ul li i,
-.smo-packages .content-writing ul .outer-list ul li i,
-.smo-packages .off-page ul .outer-list ul li i,
-.smo-packages .monthly-report ul .outer-list ul li i {
+.google-ad-packages .on-page-activities ul .outer-list ul li i,
+.google-ad-packages .content-writing ul .outer-list ul li i,
+.google-ad-packages .off-page ul .outer-list ul li i,
+.google-ad-packages .monthly-report ul .outer-list ul li i {
   font-size: 20px;
 }
-.smo-packages .on-page-activities ul .outer-list ul li .fa-circle-check,
-.smo-packages .content-writing ul .outer-list ul li .fa-circle-check,
-.smo-packages .off-page ul .outer-list ul li .fa-circle-check,
-.smo-packages .monthly-report ul .outer-list ul li .fa-circle-check {
+.google-ad-packages .on-page-activities ul .outer-list ul li .fa-circle-check,
+.google-ad-packages .content-writing ul .outer-list ul li .fa-circle-check,
+.google-ad-packages .off-page ul .outer-list ul li .fa-circle-check,
+.google-ad-packages .monthly-report ul .outer-list ul li .fa-circle-check {
   color: #3983c7;
 }
-.smo-packages .on-page-activities ul .outer-list ul li .fa-circle-xmark,
-.smo-packages .content-writing ul .outer-list ul li .fa-circle-xmark,
-.smo-packages .off-page ul .outer-list ul li .fa-circle-xmark,
-.smo-packages .monthly-report ul .outer-list ul li .fa-circle-xmark {
+.google-ad-packages .on-page-activities ul .outer-list ul li .fa-circle-xmark,
+.google-ad-packages .content-writing ul .outer-list ul li .fa-circle-xmark,
+.google-ad-packages .off-page ul .outer-list ul li .fa-circle-xmark,
+.google-ad-packages .monthly-report ul .outer-list ul li .fa-circle-xmark {
   color: #bf0026;
 }
-.smo-packages .on-page-activities ul .outer-list ul li:first-child,
-.smo-packages .content-writing ul .outer-list ul li:first-child,
-.smo-packages .off-page ul .outer-list ul li:first-child,
-.smo-packages .monthly-report ul .outer-list ul li:first-child {
+.google-ad-packages .on-page-activities ul .outer-list ul li:first-child,
+.google-ad-packages .content-writing ul .outer-list ul li:first-child,
+.google-ad-packages .off-page ul .outer-list ul li:first-child,
+.google-ad-packages .monthly-report ul .outer-list ul li:first-child {
   justify-content: start;
 }
-.smo-packages .on-page-activities ul .click-list,
-.smo-packages .content-writing ul .click-list,
-.smo-packages .off-page ul .click-list,
-.smo-packages .monthly-report ul .click-list {
+.google-ad-packages .on-page-activities ul .click-list,
+.google-ad-packages .content-writing ul .click-list,
+.google-ad-packages .off-page ul .click-list,
+.google-ad-packages .monthly-report ul .click-list {
   margin: 10px 0px;
 }
-.smo-packages .on-page-activities ul .click-list ul li,
-.smo-packages .content-writing ul .click-list ul li,
-.smo-packages .off-page ul .click-list ul li,
-.smo-packages .monthly-report ul .click-list ul li {
+.google-ad-packages .on-page-activities ul .click-list ul li,
+.google-ad-packages .content-writing ul .click-list ul li,
+.google-ad-packages .off-page ul .click-list ul li,
+.google-ad-packages .monthly-report ul .click-list ul li {
   text-transform: capitalize;
   border: none;
 }
-.smo-packages .on-page-activities ul .click-list ul li a,
-.smo-packages .content-writing ul .click-list ul li a,
-.smo-packages .off-page ul .click-list ul li a,
-.smo-packages .monthly-report ul .click-list ul li a {
+.google-ad-packages .on-page-activities ul .click-list ul li a,
+.google-ad-packages .content-writing ul .click-list ul li a,
+.google-ad-packages .off-page ul .click-list ul li a,
+.google-ad-packages .monthly-report ul .click-list ul li a {
   font-weight: bold;
   color: #fff;
   font-weight: bold;
@@ -222,16 +222,16 @@ html {
   background-color: #bf0026;
   cursor: pointer;
 }
-.smo-packages .on-page-activities ul .click-list ul li:first-child a,
-.smo-packages .content-writing ul .click-list ul li:first-child a,
-.smo-packages .off-page ul .click-list ul li:first-child a,
-.smo-packages .monthly-report ul .click-list ul li:first-child a {
+.google-ad-packages .on-page-activities ul .click-list ul li:first-child a,
+.google-ad-packages .content-writing ul .click-list ul li:first-child a,
+.google-ad-packages .off-page ul .click-list ul li:first-child a,
+.google-ad-packages .monthly-report ul .click-list ul li:first-child a {
   padding: 0px;
   background-color: #eee;
   border: none;
   color: #777;
 }
-.smo-packages .on-page-activities ul {
+.google-ad-packages .on-page-activities ul {
   display: block;
 }
 
@@ -302,4 +302,4 @@ html {
   color: #bf0026;
   padding-left: 15px;
   font-weight: bold;
-}/*# sourceMappingURL=smo.css.map */
+}/*# sourceMappingURL=googl-ad.css.map */

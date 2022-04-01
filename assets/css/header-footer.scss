@@ -45,6 +45,7 @@ body {
         }
     }
 }
+
 .contact-icon{
     position: fixed;
     bottom: 25px;
@@ -171,8 +172,7 @@ body {
     }
     nav {
         ul {
-            li {
-                padding-bottom: 10px;
+            li {                
                 position: relative;
                 color: #fff;
                 text-transform: uppercase;
@@ -180,6 +180,7 @@ body {
                 cursor: pointer;
                 font-size: 14px;
                 a {
+                    padding-bottom: 10px;
                     text-transform: uppercase;
                     font-style: italic;
                     position: relative;

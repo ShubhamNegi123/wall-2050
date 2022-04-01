@@ -398,7 +398,7 @@ header {
             .image-wrapper {
                 overflow: hidden;
                 position: relative;
-                text-align: center;
+                text-align: center;                
                 img {
                     width: 100%;
                     transition: all 0.3s ease;
@@ -431,17 +431,22 @@ header {
                 &:hover {
                     .hover-text {
                         transition: all 0.3s ease;
-                        bottom: 0px;
+                        bottom: 5px;
                     }
                     img {
                         transition: all 0.3s ease;
-                        transform: scale(1.1, 1.1);
+                        transform: scale(1.1);
                     }
                 }
             }
         }
         .logos-image-wrapper {
             display: block;
+        }
+    }
+    .smb-banner-image-wrapper{
+        .image-wrapper{
+            border: 1px solid #000;
         }
     }
     .active-tab {

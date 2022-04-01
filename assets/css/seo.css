@@ -8,7 +8,6 @@
   background-color: #111;
   width: 100%;
 }
-
 .banner .about-heading h1 {
   font-size: 30px;
   letter-spacing: 5px;
@@ -16,7 +15,6 @@
   text-transform: uppercase;
   color: #fff;
 }
-
 .banner .about-heading p {
   font-size: 16px;
   line-height: 30px;
@@ -34,7 +32,6 @@ html {
 .seo-content {
   margin-top: 100px;
 }
-
 .seo-content h2 {
   margin-top: 50px;
   letter-spacing: 5px;
@@ -43,7 +40,6 @@ html {
   text-transform: uppercase;
   font-size: 25px;
 }
-
 .seo-content p {
   font-size: 16px;
   line-height: 30px;
@@ -58,13 +54,10 @@ html {
   margin-top: 100px;
   background-color: #eee;
 }
-
 .seo-packages .packages-wrapper {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   overflow: hidden;
 }
-
 .seo-packages h2 {
   margin-bottom: 10px;
   letter-spacing: 5px;
@@ -74,14 +67,12 @@ html {
   font-size: 25px;
   text-align: center;
 }
-
 .seo-packages .main-table {
   background-color: #3983c7;
   padding: 5px;
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
-
 .seo-packages .main-table th {
   padding: 10px 0px;
   text-align: center;
@@ -90,16 +81,13 @@ html {
   width: 25%;
   border-bottom: 1px solid #fff;
 }
-
 .seo-packages .main-table th i {
   color: #fff;
 }
-
 .seo-packages .main-table th:first-child {
-  text-align-last: left;
+  text-align: left;
   padding-left: 15px;
 }
-
 .seo-packages .main-table td {
   padding: 10px 0px;
   text-align: center;
@@ -108,7 +96,6 @@ html {
   width: 25%;
   border-bottom: 1px solid #fff;
 }
-
 .seo-packages .main-table td a {
   color: #fff;
   font-weight: bold;
@@ -117,7 +104,10 @@ html {
   background-color: #bf0026;
   cursor: pointer;
 }
-
+.seo-packages .main-table td:first-child {
+  text-align: left;
+  padding-left: 15px;
+}
 .seo-packages .on-page-activities h3,
 .seo-packages .content-writing h3,
 .seo-packages .off-page h3,
@@ -132,45 +122,38 @@ html {
   background-color: #111;
   color: #fff;
   border: 1px solid #fff;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   cursor: pointer;
 }
-
 .seo-packages .on-page-activities h3 i,
 .seo-packages .content-writing h3 i,
 .seo-packages .off-page h3 i,
 .seo-packages .monthly-report h3 i {
   color: #fff;
 }
-
 .seo-packages .on-page-activities ul,
 .seo-packages .content-writing ul,
 .seo-packages .off-page ul,
 .seo-packages .monthly-report ul {
   display: none;
 }
-
 .seo-packages .on-page-activities ul .outer-list:nth-child(2n),
 .seo-packages .content-writing ul .outer-list:nth-child(2n),
 .seo-packages .off-page ul .outer-list:nth-child(2n),
 .seo-packages .monthly-report ul .outer-list:nth-child(2n) {
   background-color: #e6e3e3;
 }
-
 .seo-packages .on-page-activities ul .outer-list ul,
 .seo-packages .content-writing ul .outer-list ul,
 .seo-packages .off-page ul .outer-list ul,
 .seo-packages .monthly-report ul .outer-list ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .seo-packages .on-page-activities ul .outer-list ul li,
 .seo-packages .content-writing ul .outer-list ul li,
 .seo-packages .off-page ul .outer-list ul li,
 .seo-packages .monthly-report ul .outer-list ul li {
+  text-transform: capitalize;
   width: 25%;
   text-align: center;
   /* border: 1px solid rgba(191, 0, 38,0.1); */
@@ -179,8 +162,10 @@ html {
   /*  color: $secondary-color; */
   padding: 5px 0px;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 .seo-packages .on-page-activities ul .outer-list ul li:first-child,
 .seo-packages .content-writing ul .outer-list ul li:first-child,
 .seo-packages .off-page ul .outer-list ul li:first-child,
@@ -188,46 +173,47 @@ html {
   text-align: left;
   padding-left: 15px;
 }
-
 .seo-packages .on-page-activities ul .outer-list ul li i,
 .seo-packages .content-writing ul .outer-list ul li i,
 .seo-packages .off-page ul .outer-list ul li i,
 .seo-packages .monthly-report ul .outer-list ul li i {
   font-size: 20px;
 }
-
 .seo-packages .on-page-activities ul .outer-list ul li .fa-circle-check,
 .seo-packages .content-writing ul .outer-list ul li .fa-circle-check,
 .seo-packages .off-page ul .outer-list ul li .fa-circle-check,
 .seo-packages .monthly-report ul .outer-list ul li .fa-circle-check {
   color: #3983c7;
 }
-
 .seo-packages .on-page-activities ul .outer-list ul li .fa-circle-xmark,
 .seo-packages .content-writing ul .outer-list ul li .fa-circle-xmark,
 .seo-packages .off-page ul .outer-list ul li .fa-circle-xmark,
 .seo-packages .monthly-report ul .outer-list ul li .fa-circle-xmark {
   color: #bf0026;
 }
-
+.seo-packages .on-page-activities ul .outer-list ul li:first-child,
+.seo-packages .content-writing ul .outer-list ul li:first-child,
+.seo-packages .off-page ul .outer-list ul li:first-child,
+.seo-packages .monthly-report ul .outer-list ul li:first-child {
+  justify-content: start;
+}
 .seo-packages .on-page-activities ul .click-list,
 .seo-packages .content-writing ul .click-list,
 .seo-packages .off-page ul .click-list,
 .seo-packages .monthly-report ul .click-list {
   margin: 10px 0px;
 }
-
 .seo-packages .on-page-activities ul .click-list ul li,
 .seo-packages .content-writing ul .click-list ul li,
 .seo-packages .off-page ul .click-list ul li,
 .seo-packages .monthly-report ul .click-list ul li {
+  text-transform: capitalize;
   border: none;
 }
-
-.seo-packages .on-page-activities ul .click-list ul li span,
-.seo-packages .content-writing ul .click-list ul li span,
-.seo-packages .off-page ul .click-list ul li span,
-.seo-packages .monthly-report ul .click-list ul li span {
+.seo-packages .on-page-activities ul .click-list ul li a,
+.seo-packages .content-writing ul .click-list ul li a,
+.seo-packages .off-page ul .click-list ul li a,
+.seo-packages .monthly-report ul .click-list ul li a {
   font-weight: bold;
   color: #fff;
   font-weight: bold;
@@ -236,28 +222,25 @@ html {
   background-color: #bf0026;
   cursor: pointer;
 }
-
-.seo-packages .on-page-activities ul .click-list ul li:first-child span,
-.seo-packages .content-writing ul .click-list ul li:first-child span,
-.seo-packages .off-page ul .click-list ul li:first-child span,
-.seo-packages .monthly-report ul .click-list ul li:first-child span {
+.seo-packages .on-page-activities ul .click-list ul li:first-child a,
+.seo-packages .content-writing ul .click-list ul li:first-child a,
+.seo-packages .off-page ul .click-list ul li:first-child a,
+.seo-packages .monthly-report ul .click-list ul li:first-child a {
   padding: 0px;
   background-color: #eee;
   border: none;
   color: #777;
 }
-
 .seo-packages .on-page-activities ul {
   display: block;
 }
 
-.lets-contact {
+.contact-us {
   margin-top: 100px;
   padding: 50px 0px;
   background-color: #111;
 }
-
-.lets-contact h2 {
+.contact-us h2 {
   margin-bottom: 10px;
   letter-spacing: 5px;
   word-spacing: 5px;
@@ -267,64 +250,45 @@ html {
   text-align: center;
   color: #fff;
 }
-
-.lets-contact form input {
+.contact-us form input {
   width: 100%;
   height: 40px;
   background-color: transparent;
   padding-left: 15px;
   border: 1px solid #eee;
 }
-
-.lets-contact form input::-webkit-input-placeholder {
+.contact-us form input::-moz-placeholder {
   color: #fff;
   font-weight: bold;
 }
-
-.lets-contact form input:-ms-input-placeholder {
+.contact-us form input:-ms-input-placeholder {
   color: #fff;
   font-weight: bold;
 }
-
-.lets-contact form input::-ms-input-placeholder {
+.contact-us form input::placeholder {
   color: #fff;
   font-weight: bold;
 }
-
-.lets-contact form input::placeholder {
-  color: #fff;
-  font-weight: bold;
-}
-
-.lets-contact form textarea {
+.contact-us form textarea {
   width: 100%;
   background-color: transparent;
   padding: 10px 15px;
   border: 1px solid #eee;
   resize: none;
 }
-
-.lets-contact form textarea::-webkit-input-placeholder {
+.contact-us form textarea::-moz-placeholder {
   color: #fff;
   font-weight: bold;
 }
-
-.lets-contact form textarea:-ms-input-placeholder {
+.contact-us form textarea:-ms-input-placeholder {
   color: #fff;
   font-weight: bold;
 }
-
-.lets-contact form textarea::-ms-input-placeholder {
+.contact-us form textarea::placeholder {
   color: #fff;
   font-weight: bold;
 }
-
-.lets-contact form textarea::placeholder {
-  color: #fff;
-  font-weight: bold;
-}
-
-.lets-contact form button {
+.contact-us form button {
   padding: 3px 50px;
   text-transform: uppercase;
   background-color: #3983c7;
@@ -332,4 +296,10 @@ html {
   border-radius: 5px;
   color: #fff;
 }
-/*# sourceMappingURL=seo.css.map */
+.contact-us form .error {
+  visibility: hidden;
+  opacity: 0;
+  color: #bf0026;
+  padding-left: 15px;
+  font-weight: bold;
+}/*# sourceMappingURL=seo.css.map */
