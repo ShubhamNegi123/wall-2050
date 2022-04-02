@@ -43,10 +43,7 @@
 
 <body>
 
-
-
     <div class="navigation-bar"></div>
-
 
     <section class="banner">
         <!--  <img src="assets/images/about-page-banner.jpg" alt="about-us-banner"> -->
@@ -57,9 +54,6 @@
             </div>
         </div>
     </section>
-
-
-
 
     <section class="after-contact">
         <div class="container">
@@ -79,15 +73,30 @@
 
     <section class="form">
         <div class="container">
-            <form action="">
+            <form >
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="inputs">
-                                    <input type="text" id="name" name="name" placeholder="NAME">                                   
-                                    <input type="text" id="email" name="email" placeholder="EMAIL">                                   
-                                    <input type="text" id="phone" name="phone" placeholder="PHONE">                                   
+                                    <input type="text" id="name" name="name" placeholder="NAME">
+                                    <label for="name" class="error name-error">error</label>
+                                    <input type="text" id="email" name="email" placeholder="EMAIL">
+                                    <label for="email" class="error email-error">error</label>
+                                    <input type="text" id="phone" name="phone" placeholder="PHONE">
+                                    <label for="phone" class="error phone-error">error</label>
+
+                                    <select name="services" id="services">
+                                        <option value="select">Services</option>
+                                        <option value="1">service2</option>
+                                        <option value="1">service3</option>
+                                        <option value="1">service4</option>
+                                        <option value="1">service5</option>
+                                        <option value="1">service6</option>
+                                        <option value="1">service7</option>
+                                        <option value="1">service8</option>
+                                    </select>
+                                    <label for="phone" class="error phone-error">error</label>
                                 </div>
                             </div>
                             <div class="col-lg-6 ">
@@ -131,6 +140,7 @@
 
     <script src="assets/js/header-footer.js"></script>
     <script src="assets/js/navigationBg.js"></script>
+    <script src="assets/js/contact-form.js"></script>
     <script>
         
         $('.uncover').click(function(){
@@ -155,7 +165,7 @@
             $('.cover').hide();
         });
     
-        </script>
+    </script>
 </body>
 
 </html>
