@@ -1,6 +1,11 @@
 $(function () {
 
 
+
+
+
+
+
     $(window).scroll(function (event) {
         var scroll = $(window).scrollTop();
         var h = window.innerHeight;
