@@ -178,6 +178,7 @@ $text-color: #777;
             width: 100%;
         }
         .text {
+            pointer-events: none;
             background-color: rgba(0,0,0,0.5);
             transition: all .3s ease;
             position: absolute;

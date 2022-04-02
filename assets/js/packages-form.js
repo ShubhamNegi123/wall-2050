@@ -1,126 +1,161 @@
 $(function () {
 
+    let emailValid;
+    let NameValid;
+    let phoneValid;
+    let serviceValid;
+    let messageValid;
+    var selectedServices;
 
-
-
-    /* form first name validation */
-    $("#name").on("blur", function () {
-        if ($(this).val() == '') {
-            $('.name-error').css({
+    function isNameValid() {
+        let name = $('#name').val();
+        let len = name.length;
+        if (name === '') {
+            $('.form .name-error').css({
+                opacity: '1',
                 visibility: 'visible',
-                opacity: 1,
             });
-            $('.name-error').text('Please fill out this field');
-
-        } else if ($(this).val().match('^[a-zA-Z]{3,16}$')) {
-            $('.name-error').css({
-                visibility: 'hidden',
-                opacity: 0
-            })
+            $('.form .name-error').text('Name can not be empty');
+            nameValid = false;
+        } else if (len < 3 || len > 20) {
+            $('.form .name-error').css({
+                opacity: '1',
+                visibility: 'visible',
+            });
+            $('.form .name-error').text('Enter a valid name');
+            nameValid = false;
         } else {
-            $('.name-error').css({
-                visibility: 'visible',
-                opacity: 1,
-            });
-            $('.name-error').text('Enter a valid name');
-        }
-    });
-
-
-
-    $("#email").on("blur", function () {
-        var pattern = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i
-
-        if ($(this).val() == '') {
-            $('.email-error').css({
-                visibility: 'visible',
-                opacity: 1,
-            });
-            $('.email-error').text('Please fill out this field');
-
-        } else if (pattern.test($(this).val())) {
-            $('.email-error').css({
+            $('.form .name-error').css({
+                opacity: '0',
                 visibility: 'hidden',
-                opacity: 0
-            })
-        } else {
-            $('.email-error').css({
-                visibility: 'visible',
-                opacity: 1,
             });
-            $('.email-error').text('Enter a valid email');
+            nameValid = true;
         }
-    });
+    }
 
-
-
-
-
-
-
-    $("#phone").on("blur", function () {
-        var pattern = /^[0-9]{10}$/;
-        if (pattern.test($(this).val())) {
-            $('.phone-error').css({
+    function isEmailValid() {
+        let email = $('#email').val();
+        let regex = /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
+        if (regex.test(email)) {
+            $('.form .email-error').css({
+                opacity: '0',
                 visibility: 'hidden',
-                opacity: 0
             });
-        }
-        else if ($(this).val() == '') {
-            $('.phone-error').css({
+            emailValid = true;
+        } else if (email === '') {
+            $('.form .email-error').css({
+                opacity: '1',
                 visibility: 'visible',
-                opacity: 1,
             });
-            $('.phone-error').text('Please fill out this field');
-
+            $('.form .email-error').text('Email can not be empty');
+            emailValid = false;
         } else {
-            $('.phone-error').css({
+            $('.form .email-error').css({
+                opacity: '1',
                 visibility: 'visible',
-                opacity: 1,
             });
-            $('.phone-error').text('Enter a valid phone number');
+            $('.form .email-error').text('Enter a valid Email');
+            emailValid = false;
         }
-    });
+    }
 
-    $("#website").on("blur", function () {
-        var url = $(this).val();        
-        if ($(this).val() == '') {
-            $('.website-error').css({
+    function isPhoneNumberValid() {
+        let phone = $('#phone').val();
+        let len = phone.length;
+        if (phone === '') {
+            $('.form .phone-error').css({
+                opacity: '1',
                 visibility: 'visible',
-                opacity: 1,
             });
-            $('.website-error').text('Please fill out this field');
-
+            $('.form .phone-error').text('phone can not be empty');
+            phoneValid = false;
+        } else if (len != 10) {
+            $('.form .phone-error').css({
+                opacity: '1',
+                visibility: 'visible',
+            });
+            $('.form .phone-error').text('Enter a valid phone number');
+            phoneValid = false;
         } else {
-            $('.phone-error').css({
+            $('.form .phone-error').css({
+                opacity: '0',
                 visibility: 'hidden',
-                opacity: 0,
             });
+            phoneValid = true;
         }
-    });
-
-
-    $("#message").on("blur", function () {
-        var url = $(this).val();        
-        if ($(this).val() == '') {
-            $('.message-error').css({
+    }
+ 
+    function isMessageValid() {
+        let message = $('#message').val();
+        let len = message.length;
+        if (message === '') {
+            $('.form .message-error').css({
+                opacity: '1',
                 visibility: 'visible',
-                opacity: 1,
             });
-            $('.message-error').text('Please fill out this field');
-
+            $('.form .message-error').text('Message can not be empty');
+            messageValid = false;
+        } else if (len < 10 ) {
+            $('.form .message-error').css({
+                opacity: '1',
+                visibility: 'visible',
+            });
+            $('.form .message-error').text('Enter a valid message');
+            messageValid = false;
         } else {
-            $('.message-error').css({
+            $('.form .message-error').css({
+                opacity: '0',
                 visibility: 'hidden',
-                opacity: 0,
             });
+            messageValid = true;
         }
+    }
+
+    function hideSubmitError() {
+        $('.submit-error').css({
+            opacity: '0',
+            visibility: 'hidden',
+        });
+    }
+
+
+    $('#name').blur(function () {
+        isNameValid();
+        hideSubmitError();
     });
-
-
-    // Below regular expression can validate input URL with or without http:// etc
-   
+    $('#email').blur(function () {
+        isEmailValid();
+        hideSubmitError();
+    });
+    $('#phone').blur(function () {
+        isPhoneNumberValid();
+        hideSubmitError();
+    });
     
+    $('#message').blur(function () {
+       isMessageValid();
+       hideSubmitError();
+    });
+
+   
+    $("form").submit(function (event) {
+        event.preventDefault();
+        isNameValid();
+        isEmailValid();
+        isPhoneNumberValid();
+        isMessageValid();
+
+        if (nameValid && emailValid && phoneValid && messageValid) {
+            $('#newsletter label').hide();
+            window.location = 'assets/php/packages.php';
+        } else {
+           $('.submit-error').css({
+            opacity: '1',
+            visibility: 'visible',
+           });
+        }
+    });
+
 
    
 });

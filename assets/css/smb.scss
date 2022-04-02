@@ -52,13 +52,11 @@ $text-color: #777;
 
 .smb {
     padding: 100px 0px;
-    background-color: $secondary-color;
     h2 {
         text-align: center;
         margin-bottom: 50px;
         text-transform: uppercase;
         @include h1-font;
-        color: #fff;
     }    
     .clients-logo {        
         .img-wrapper{

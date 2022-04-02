@@ -274,13 +274,18 @@ html {
             border-radius: 5px;
             color: #fff;
         }
-        .error{
-            visibility: hidden;
-            opacity: 0;            
-            color: $primary-color;
-            padding-left: 15px;
-            font-weight: bold;
-        }
+        
+    }
+    .error{
+        visibility: hidden;
+        opacity: 0;            
+        color: $primary-color;
+        padding-left: 15px;
+        font-weight: bold;
+        color: red;
+    }
+    .submit-error{
+        margin-top: 10px;
     }
 }
 

@@ -164,10 +164,15 @@ body {
 }
 
 .clients {
+    margin-top: 100px;
     .client-logo {
         img {
             width: 100%;
         }
+    }
+    .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel .owl-nav button.owl-prev {
+        display: none;
     }
 }
 

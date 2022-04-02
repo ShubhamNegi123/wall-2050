@@ -358,11 +358,16 @@ html {
   color: #fff;
 }
 
-.contact-us form .error {
+.contact-us .error {
   visibility: hidden;
   opacity: 0;
   color: #bf0026;
   padding-left: 15px;
   font-weight: bold;
+  color: red;
+}
+
+.contact-us .submit-error {
+  margin-top: 10px;
 }
 /*# sourceMappingURL=smo.css.map */

@@ -162,8 +162,17 @@ body * ul {
   font-size: 30px;
 }
 
+.clients {
+  margin-top: 100px;
+}
+
 .clients .client-logo img {
   width: 100%;
+}
+
+.clients .owl-carousel .owl-nav button.owl-next,
+.clients .owl-carousel .owl-nav button.owl-prev {
+  display: none;
 }
 
 .mission-vision {

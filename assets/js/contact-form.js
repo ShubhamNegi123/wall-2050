@@ -1,10 +1,11 @@
 $(function () {
 
-    let nameValid;
     let emailValid;
     let NameValid;
     let phoneValid;
-
+    let serviceValid;
+    let messageValid;
+    var selectedServices;
 
 
 
@@ -62,8 +63,8 @@ $(function () {
     }
 
     function isPhoneNumberValid() {
-        let phone = $('#phone').val();  
-        let len = phone.length;      
+        let phone = $('#phone').val();
+        let len = phone.length;
         if (phone === '') {
             $('.form .phone-error').css({
                 opacity: '1',
@@ -87,30 +88,110 @@ $(function () {
         }
     }
 
+   
+    function isServiceValid() {
+        if (selectedServices === 'select') {
+            $('.form .services-error').css({
+                opacity: '1',
+                visibility: 'visible',
+            });
+            $('.form .services-error').text('Please select a service');
+            serviceValid = false;
+        } else {
+            $('.form .services-error').css({
+                opacity: '0',
+                visibility: 'hidden',
+            });
+            serviceValid = true;
+        }
+    }
+
+    function isMessageValid() {
+        let message = $('#message').val();
+        let len = message.length;
+        if (message === '') {
+            $('.form .message-error').css({
+                opacity: '1',
+                visibility: 'visible',
+            });
+            $('.form .message-error').text('Message can not be empty');
+            messageValid = false;
+        } else if (len < 10 ) {
+            $('.form .message-error').css({
+                opacity: '1',
+                visibility: 'visible',
+            });
+            $('.form .message-error').text('Enter a valid message');
+            messageValid = false;
+        } else {
+            $('.form .message-error').css({
+                opacity: '0',
+                visibility: 'hidden',
+            });
+            messageValid = true;
+        }
+    }
+
+    function hideSubmitError() {
+        $('.submit-error').css({
+            opacity: '0',
+            visibility: 'hidden',
+        });
+    }
+
+
+
+
+
+
+
 
 
     $('#name').blur(function () {
         isNameValid();
+        hideSubmitError();
     });
     $('#email').blur(function () {
         isEmailValid();
+        hideSubmitError();
     });
     $('#phone').blur(function () {
         isPhoneNumberValid();
+        hideSubmitError();
+    });
+    $('#services').blur(function () {
+        selectedServices = $(this).children("option:selected").val();
+        isServiceValid();
+        hideSubmitError();
+    });
+    $('#message').blur(function () {
+       isMessageValid();
+       hideSubmitError();
     });
 
+   
+    
 
     $("form").submit(function (event) {
         event.preventDefault();
         isNameValid();
+        isEmailValid();
+        isPhoneNumberValid();
+        isMessageValid();
 
-        if (nameValid) {
+        if (nameValid && emailValid && phoneValid && messageValid) {
             $('#newsletter label').hide();
             window.location = 'index.html'
         } else {
-            alert();
+           $('.submit-error').css({
+            opacity: '1',
+            visibility: 'visible',
+           });
         }
     });
+
+
+
 
     // Validate Email
     /* 
