@@ -628,14 +628,22 @@ header {
         text-transform: uppercase;
     }
     form {
+        position: relative;
         input {
             width: 50%;
             height: 40px;
         }
+        label{
+            position: absolute;
+            color: $primary-color;
+            bottom: -25px;
+            text-transform: capitalize;
+            left: 14%;
+            display: none;
+        }
         button {
             background: rgba(34, 34, 34, 0.9);
             color: #fff;
-
             border-radius: 3px;
             font-style: italic;
             color: #fff;
@@ -653,7 +661,7 @@ header {
         }
     }
     p {
-        margin-top: 20px;
+        margin-top: 30px;
         font-size: 12px;
         font-style: italic;
         letter-spacing: 2px;

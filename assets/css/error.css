@@ -2,10 +2,12 @@
 body {
   overflow: hidden;
 }
+
 body * {
   padding: 0px;
   margin: 0px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .error-wrapper {
@@ -15,34 +17,39 @@ body * {
   position: relative;
   overflow: hidden;
 }
+
 .error-wrapper #error {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
 }
+
 .error-wrapper #error h1 {
   font-size: 200px;
-  font-family: "Archivo Black", sans-serif;
+  font-family: 'Archivo Black', sans-serif;
   background-image: url(../images/bg1.jpg);
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   background-position: center;
   color: transparent;
 }
+
 .error-wrapper #error span {
-  font-family: "Archivo Black", sans-serif;
+  font-family: 'Archivo Black', sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-size: 20px;
 }
+
 .error-wrapper #error p {
   color: #222020;
   margin-top: 20px;
   margin-bottom: 30px;
   font-family: serif;
 }
+
 .error-wrapper #error a {
   text-transform: uppercase;
   padding: 12px 30px;
@@ -60,8 +67,10 @@ body * {
     font-size: 100px;
   }
 }
+
 @media only screen and (max-width: 350px) {
   .error-wrapper #error h1 {
     font-size: 80px;
   }
-}/*# sourceMappingURL=error.css.map */
+}
+/*# sourceMappingURL=error.css.map */

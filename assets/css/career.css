@@ -8,6 +8,7 @@
   background-color: #111;
   width: 100%;
 }
+
 .banner .about-heading h1 {
   font-size: 30px;
   letter-spacing: 5px;
@@ -15,6 +16,7 @@
   text-transform: uppercase;
   color: #fff;
 }
+
 .banner .about-heading p {
   font-size: 16px;
   line-height: 30px;
@@ -28,6 +30,7 @@
 .career-content {
   margin-top: 100px;
 }
+
 .career-content h2 {
   margin-top: 50px;
   letter-spacing: 5px;
@@ -36,6 +39,7 @@
   text-transform: uppercase;
   font-size: 25px;
 }
+
 .career-content p {
   font-size: 16px;
   line-height: 30px;
@@ -48,6 +52,7 @@
 .values {
   margin-top: 100px;
 }
+
 .values h2 {
   font-size: 25px;
   text-transform: uppercase;
@@ -56,13 +61,16 @@
   text-align: center;
   margin-bottom: 20px;
 }
+
 .values .value-card {
   text-align: center;
 }
+
 .values .value-card i {
   padding: 10px;
   font-size: 50px;
 }
+
 .values .value-card h3 {
   margin-top: 20px;
   font-size: 16px;
@@ -71,4 +79,5 @@
   letter-spacing: 5px;
   text-align: center;
   margin-bottom: 10px;
-}/*# sourceMappingURL=career.css.map */
+}
+/*# sourceMappingURL=career.css.map */
