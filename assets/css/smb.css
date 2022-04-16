@@ -8,7 +8,6 @@
   background-color: #111;
   width: 100%;
 }
-
 .banner .about-heading h1 {
   font-size: 30px;
   letter-spacing: 5px;
@@ -16,7 +15,6 @@
   text-transform: uppercase;
   color: #fff;
 }
-
 .banner .about-heading p {
   font-size: 16px;
   line-height: 30px;
@@ -30,18 +28,15 @@
 .smb {
   padding: 100px 0px;
 }
-
 .smb h2 {
   text-align: center;
   margin-bottom: 50px;
   text-transform: uppercase;
   font-size: 30px;
 }
-
 .smb .clients-logo .img-wrapper {
   z-index: 9;
 }
-
 .smb .clients-logo .img-wrapper img {
   width: 100%;
 }
@@ -57,23 +52,15 @@
   height: 100%;
   overflow: hidden;
   z-index: 9999;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   display: none;
 }
-
 .model-image-wrapper .model-image {
   position: relative;
   width: 35%;
 }
-
 .model-image-wrapper .model-image .fa-circle-xmark {
   color: #fff;
   font-size: 30px;
@@ -82,8 +69,6 @@
   top: -30px;
   right: -30px;
 }
-
 .model-image-wrapper .model-image img {
   width: 100%;
-}
-/*# sourceMappingURL=smb.css.map */
+}/*# sourceMappingURL=smb.css.map */

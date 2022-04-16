@@ -8,7 +8,6 @@
   background-color: #111;
   width: 100%;
 }
-
 .banner .about-heading h1 {
   font-size: 30px;
   letter-spacing: 5px;
@@ -16,7 +15,6 @@
   text-transform: uppercase;
   color: #fff;
 }
-
 .banner .about-heading p {
   font-size: 16px;
   line-height: 30px;
@@ -34,7 +32,6 @@ html {
 .logos {
   overflow: hidden;
 }
-
 .logos h1 {
   margin-top: 50px;
   letter-spacing: 5px;
@@ -44,24 +41,18 @@ html {
   font-size: 30px;
   text-align: center;
 }
-
 .logos .logos-images .links {
   overflow: hidden;
 }
-
 .logos .logos-images .links img {
   cursor: pointer;
   max-width: 100%;
   width: 100%;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
-
 .logos .logos-images .links img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }
 
 .model-image-wrapper {
@@ -75,23 +66,15 @@ html {
   height: 100%;
   overflow: hidden;
   z-index: 9999;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   display: none;
 }
-
 .model-image-wrapper .model-image {
   position: relative;
   width: 35%;
 }
-
 .model-image-wrapper .model-image .fa-circle-xmark {
   color: #fff;
   font-size: 30px;
@@ -100,8 +83,6 @@ html {
   top: -30px;
   right: -30px;
 }
-
 .model-image-wrapper .model-image img {
   width: 100%;
-}
-/*# sourceMappingURL=logos.css.map */
+}/*# sourceMappingURL=logos.css.map */

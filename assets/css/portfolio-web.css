@@ -8,7 +8,6 @@
   background-color: #111;
   width: 100%;
 }
-
 .banner .about-heading h1 {
   font-size: 30px;
   letter-spacing: 5px;
@@ -16,7 +15,6 @@
   text-transform: uppercase;
   color: #fff;
 }
-
 .banner .about-heading p {
   font-size: 16px;
   line-height: 30px;
@@ -31,7 +29,6 @@
   padding: 100px 0px;
   background-color: #3983c7;
 }
-
 .smb h2 {
   text-align: center;
   margin-bottom: 50px;
@@ -39,12 +36,9 @@
   font-size: 30px;
   color: #fff;
 }
-
 .smb .clients-logo .img-wrapper {
   z-index: 9;
 }
-
 .smb .clients-logo .img-wrapper img {
   width: 100%;
-}
-/*# sourceMappingURL=portfolio-web.css.map */
+}/*# sourceMappingURL=portfolio-web.css.map */

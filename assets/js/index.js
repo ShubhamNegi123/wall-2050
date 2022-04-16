@@ -24,9 +24,6 @@ $(function () {
         isFormValid(); 
     }); 
 
-
-
-
     $("form").submit(function(event){
         event.preventDefault()        
         if(isEmailValid){
@@ -36,20 +33,13 @@ $(function () {
             $('#newsletter label').show();
             $('#newsletter label').text('please enter valid Email');  
         }
-      });
+    });
 
 
 
 
 
-
-
-
-
-
-
-
-
+    
     $('.uncover').click(function () {
         $('.map-cover').css({
             transition: 'all .3s ease',
@@ -71,7 +61,6 @@ $(function () {
         $('.uncover-icon').show();
         $('.cover').hide();
     });
-
 
     /* home slider */
     $('.client-slider').owlCarousel({
@@ -95,7 +84,6 @@ $(function () {
             }
         }
     });
-
 
     $('.main-slider').owlCarousel({
         loop: true,

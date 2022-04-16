@@ -8,7 +8,6 @@
   background-color: #111;
   width: 100%;
 }
-
 .banner .about-heading h1 {
   font-size: 30px;
   letter-spacing: 5px;
@@ -16,7 +15,6 @@
   text-transform: uppercase;
   color: #fff;
 }
-
 .banner .about-heading p {
   font-size: 16px;
   line-height: 30px;
@@ -34,7 +32,6 @@ html {
 .youtube-ad-content {
   margin-top: 100px;
 }
-
 .youtube-ad-content h2 {
   margin-top: 50px;
   letter-spacing: 5px;
@@ -43,7 +40,6 @@ html {
   text-transform: uppercase;
   font-size: 25px;
 }
-
 .youtube-ad-content p {
   font-size: 16px;
   line-height: 30px;
@@ -58,13 +54,10 @@ html {
   margin-top: 100px;
   background-color: #eee;
 }
-
 .youtube-ad-packages .packages-wrapper {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   overflow: hidden;
 }
-
 .youtube-ad-packages h2 {
   margin-bottom: 10px;
   letter-spacing: 5px;
@@ -74,14 +67,12 @@ html {
   font-size: 25px;
   text-align: center;
 }
-
 .youtube-ad-packages .main-table {
   background-color: #3983c7;
   padding: 5px;
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
-
 .youtube-ad-packages .main-table th {
   padding: 10px 0px;
   text-align: center;
@@ -90,16 +81,13 @@ html {
   width: 25%;
   border-bottom: 1px solid #fff;
 }
-
 .youtube-ad-packages .main-table th i {
   color: #fff;
 }
-
 .youtube-ad-packages .main-table th:first-child {
   text-align: left;
   padding-left: 15px;
 }
-
 .youtube-ad-packages .main-table td {
   padding: 10px 0px;
   text-align: center;
@@ -108,21 +96,18 @@ html {
   width: 25%;
   border-bottom: 1px solid #fff;
 }
-
 .youtube-ad-packages .main-table td a {
   color: #fff;
   font-weight: bold;
   border-radius: 5px;
   padding: 10px 50px;
-  background-color: #bf0026;
+  background-color: rgb(191, 0, 38);
   cursor: pointer;
 }
-
 .youtube-ad-packages .main-table td:first-child {
   text-align: left;
   padding-left: 15px;
 }
-
 .youtube-ad-packages .on-page-activities h3,
 .youtube-ad-packages .content-writing h3,
 .youtube-ad-packages .off-page h3,
@@ -137,41 +122,33 @@ html {
   background-color: #111;
   color: #fff;
   border: 1px solid #fff;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   cursor: pointer;
 }
-
 .youtube-ad-packages .on-page-activities h3 i,
 .youtube-ad-packages .content-writing h3 i,
 .youtube-ad-packages .off-page h3 i,
 .youtube-ad-packages .monthly-report h3 i {
   color: #fff;
 }
-
 .youtube-ad-packages .on-page-activities ul,
 .youtube-ad-packages .content-writing ul,
 .youtube-ad-packages .off-page ul,
 .youtube-ad-packages .monthly-report ul {
   display: none;
 }
-
 .youtube-ad-packages .on-page-activities ul .outer-list:nth-child(2n),
 .youtube-ad-packages .content-writing ul .outer-list:nth-child(2n),
 .youtube-ad-packages .off-page ul .outer-list:nth-child(2n),
 .youtube-ad-packages .monthly-report ul .outer-list:nth-child(2n) {
-  background-color: #e6e3e3;
+  background-color: rgb(230, 227, 227);
 }
-
 .youtube-ad-packages .on-page-activities ul .outer-list ul,
 .youtube-ad-packages .content-writing ul .outer-list ul,
 .youtube-ad-packages .off-page ul .outer-list ul,
 .youtube-ad-packages .monthly-report ul .outer-list ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .youtube-ad-packages .on-page-activities ul .outer-list ul li,
 .youtube-ad-packages .content-writing ul .outer-list ul li,
 .youtube-ad-packages .off-page ul .outer-list ul li,
@@ -185,17 +162,10 @@ html {
   /*  color: $secondary-color; */
   padding: 5px 0px;
   font-weight: bold;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .youtube-ad-packages .on-page-activities ul .outer-list ul li:first-child,
 .youtube-ad-packages .content-writing ul .outer-list ul li:first-child,
 .youtube-ad-packages .off-page ul .outer-list ul li:first-child,
@@ -203,44 +173,36 @@ html {
   text-align: left;
   padding-left: 15px;
 }
-
 .youtube-ad-packages .on-page-activities ul .outer-list ul li i,
 .youtube-ad-packages .content-writing ul .outer-list ul li i,
 .youtube-ad-packages .off-page ul .outer-list ul li i,
 .youtube-ad-packages .monthly-report ul .outer-list ul li i {
   font-size: 20px;
 }
-
 .youtube-ad-packages .on-page-activities ul .outer-list ul li .fa-circle-check,
 .youtube-ad-packages .content-writing ul .outer-list ul li .fa-circle-check,
 .youtube-ad-packages .off-page ul .outer-list ul li .fa-circle-check,
 .youtube-ad-packages .monthly-report ul .outer-list ul li .fa-circle-check {
   color: #3983c7;
 }
-
 .youtube-ad-packages .on-page-activities ul .outer-list ul li .fa-circle-xmark,
 .youtube-ad-packages .content-writing ul .outer-list ul li .fa-circle-xmark,
 .youtube-ad-packages .off-page ul .outer-list ul li .fa-circle-xmark,
 .youtube-ad-packages .monthly-report ul .outer-list ul li .fa-circle-xmark {
-  color: #bf0026;
+  color: rgb(191, 0, 38);
 }
-
 .youtube-ad-packages .on-page-activities ul .outer-list ul li:first-child,
 .youtube-ad-packages .content-writing ul .outer-list ul li:first-child,
 .youtube-ad-packages .off-page ul .outer-list ul li:first-child,
 .youtube-ad-packages .monthly-report ul .outer-list ul li:first-child {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  justify-content: start;
 }
-
 .youtube-ad-packages .on-page-activities ul .click-list,
 .youtube-ad-packages .content-writing ul .click-list,
 .youtube-ad-packages .off-page ul .click-list,
 .youtube-ad-packages .monthly-report ul .click-list {
   margin: 10px 0px;
 }
-
 .youtube-ad-packages .on-page-activities ul .click-list ul li,
 .youtube-ad-packages .content-writing ul .click-list ul li,
 .youtube-ad-packages .off-page ul .click-list ul li,
@@ -248,7 +210,6 @@ html {
   text-transform: capitalize;
   border: none;
 }
-
 .youtube-ad-packages .on-page-activities ul .click-list ul li a,
 .youtube-ad-packages .content-writing ul .click-list ul li a,
 .youtube-ad-packages .off-page ul .click-list ul li a,
@@ -258,10 +219,9 @@ html {
   font-weight: bold;
   border-radius: 5px;
   padding: 10px 50px;
-  background-color: #bf0026;
+  background-color: rgb(191, 0, 38);
   cursor: pointer;
 }
-
 .youtube-ad-packages .on-page-activities ul .click-list ul li:first-child a,
 .youtube-ad-packages .content-writing ul .click-list ul li:first-child a,
 .youtube-ad-packages .off-page ul .click-list ul li:first-child a,
@@ -271,7 +231,6 @@ html {
   border: none;
   color: #777;
 }
-
 .youtube-ad-packages .on-page-activities ul {
   display: block;
 }
@@ -281,7 +240,6 @@ html {
   padding: 50px 0px;
   background-color: #111;
 }
-
 .contact-us h2 {
   margin-bottom: 10px;
   letter-spacing: 5px;
@@ -292,7 +250,6 @@ html {
   text-align: center;
   color: #fff;
 }
-
 .contact-us form input {
   width: 100%;
   height: 40px;
@@ -300,27 +257,18 @@ html {
   padding-left: 15px;
   border: 1px solid #eee;
 }
-
-.contact-us form input::-webkit-input-placeholder {
+.contact-us form input::-moz-placeholder {
   color: #fff;
   font-weight: bold;
 }
-
 .contact-us form input:-ms-input-placeholder {
   color: #fff;
   font-weight: bold;
 }
-
-.contact-us form input::-ms-input-placeholder {
-  color: #fff;
-  font-weight: bold;
-}
-
 .contact-us form input::placeholder {
   color: #fff;
   font-weight: bold;
 }
-
 .contact-us form textarea {
   width: 100%;
   background-color: transparent;
@@ -328,27 +276,18 @@ html {
   border: 1px solid #eee;
   resize: none;
 }
-
-.contact-us form textarea::-webkit-input-placeholder {
+.contact-us form textarea::-moz-placeholder {
   color: #fff;
   font-weight: bold;
 }
-
 .contact-us form textarea:-ms-input-placeholder {
   color: #fff;
   font-weight: bold;
 }
-
-.contact-us form textarea::-ms-input-placeholder {
-  color: #fff;
-  font-weight: bold;
-}
-
 .contact-us form textarea::placeholder {
   color: #fff;
   font-weight: bold;
 }
-
 .contact-us form button {
   padding: 3px 50px;
   text-transform: uppercase;
@@ -357,17 +296,14 @@ html {
   border-radius: 5px;
   color: #fff;
 }
-
 .contact-us .error {
   visibility: hidden;
   opacity: 0;
-  color: #bf0026;
+  color: rgb(191, 0, 38);
   padding-left: 15px;
   font-weight: bold;
   color: red;
 }
-
 .contact-us .submit-error {
   margin-top: 10px;
-}
-/*# sourceMappingURL=youtube.css.map */
+}/*# sourceMappingURL=youtube.css.map */

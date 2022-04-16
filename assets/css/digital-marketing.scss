@@ -28,6 +28,9 @@ $text-color: #777;
 /* Dosis fonts */
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap");
 
+
+
+
 .banner {
     padding: 100px;
     padding-top: 150px;
@@ -162,9 +165,14 @@ $text-color: #777;
 
 .digital-marketing-packages {
     @include section-space();
+    overflow: scroll;
+    width: 100%;
     margin-bottom: 100px;
     background-image: url(../images/dmbg1.png);
     padding-top: 50px;
+    .space {
+        margin: 0px 50px;
+    }
     h2 {
         @include h2-font;
         letter-spacing: 5px;
@@ -174,13 +182,11 @@ $text-color: #777;
         color: #fff;
     }
     table {
+        min-width: 960px;
         width: 100%;
-        overflow: hidden;
-        position: relative;
-        bottom: -50px;
+        margin: 50px 0px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         border-radius: 10px;
-        overflow: hidden;
         tr {
             &:last-child td {
                 padding: 5px;
@@ -245,4 +251,6 @@ $text-color: #777;
     td {
         text-align: center;
     }
+
+    
 }

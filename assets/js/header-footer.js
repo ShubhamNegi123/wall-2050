@@ -1,14 +1,15 @@
-$(function () {
+$(function () {   
 
-
-
-
-
-
+    let wWidth = $(window).width();
+    if(wWidth <= 500){
+        $('.logo  img').attr('src', 'assets/images/footerlogo.png')
+    }
+    
 
     $(window).scroll(function (event) {
         var scroll = $(window).scrollTop();
-        var h = window.innerHeight;
+        var h = window.innerHeight/2;
+        
         if (scroll >= h) {            
             $('.navigation-bar').css({
                 backgroundColor: '#fff',

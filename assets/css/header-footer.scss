@@ -46,42 +46,42 @@ body {
     }
 }
 
-.contact-icon{
+.contact-icon {
     position: fixed;
     bottom: 25px;
     right: 20px;
-    .fa-xmark{
+    .fa-xmark {
         display: none;
         padding: 15px 19px;
         color: #fff;
         background-color: #111;
         border-radius: 50%;
         font-size: 25px;
-        cursor: pointer; 
+        cursor: pointer;
     }
-    .fa-comment-sms{
+    .fa-comment-sms {
         padding: 15px;
         color: #fff;
         background-color: #111;
         border-radius: 50%;
         font-size: 25px;
-        cursor: pointer; 
+        cursor: pointer;
     }
-    .contact-popup{
+    .contact-popup {
         display: none;
         width: 320px;
         position: fixed;
         right: 10px;
         bottom: 10%;
         background-color: #eee;
-        p{
+        p {
             background-color: #111;
             padding: 20px;
             padding-bottom: 40px;
             color: #fff;
             text-align: center;
         }
-        form{
+        form {
             margin: 20px;
             border-left: 5px solid #000;
             border-radius: 5px;
@@ -89,23 +89,31 @@ body {
             text-align: center;
             padding: 15px;
             margin-top: -20px;
-            input{
+            input {
                 width: 90%;
                 padding-left: 15px;
-                margin-bottom: 15px;
                 height: 35px;
                 border-radius: 5px;
                 border: 2px solid #eee;
             }
-            textarea{
+            label {
+                text-align: left;
+                margin-bottom: 5px;
+                display: block;
+                padding-left: 15px;
+                color: red;
+                font-weight: 600;
+                opacity: 0;
+                visibility: hidden;
+            }
+            textarea {
                 width: 90%;
                 height: 65px;
                 resize: none;
                 border: 2px solid #eee;
-                margin-bottom: 20px;                
                 padding-left: 15px;
             }
-            button{
+            button {
                 width: 90%;
                 padding: 5px 0px;
                 background-color: #111;
@@ -119,7 +127,6 @@ body {
     }
 }
 
-
 .fixed-social-icons {
     position: fixed;
     bottom: 20px;
@@ -130,9 +137,9 @@ body {
         background-color: #111;
         border-radius: 50%;
         font-size: 25px;
-        cursor: pointer;       
+        cursor: pointer;
     }
-    .tootle-icons {     
+    .tootle-icons {
         i {
             position: absolute;
             bottom: 80px;
@@ -144,14 +151,14 @@ body {
             font-size: 25px;
             margin-top: 20px;
         }
-        .fa-instagram-square{
+        .fa-instagram-square {
             left: -100px;
-            transition: all .3s ease;
+            transition: all 0.3s ease;
         }
-        .fa-facebook{
+        .fa-facebook {
             bottom: 160px;
             left: -100px;
-            transition: all .5s ease;
+            transition: all 0.5s ease;
         }
     }
 }
@@ -164,6 +171,16 @@ body {
     left: 0px;
     width: 100%;
     .logo {
+        position: relative;
+        .fa-bars {
+            display: none;
+            position: absolute;
+            top: 5px;
+            right: 20px;
+            color: #fff;
+            font-size: 22px;
+            cursor: pointer;
+        }
         img {
             position: relative;
             z-index: 999;
@@ -171,8 +188,9 @@ body {
         }
     }
     nav {
+        position: relative;
         ul {
-            li {                
+            li {
                 position: relative;
                 color: #fff;
                 text-transform: uppercase;
@@ -191,6 +209,9 @@ body {
                     text-transform: uppercase;
                     font-size: 14px;
                     transition: all 0.3s ease;
+                    i {
+                        color: #fff;
+                    }
                     &::after {
                         transition: all 0.4s ease;
                         position: absolute;
@@ -459,3 +480,115 @@ body {
     }
 }
 /* social-links end */
+
+@media only screen and (max-width: 767px) {
+    .navigation-bar {
+        .logo {
+            width: 100%;
+            img {
+                width: 200px;
+            }
+        }
+        nav {
+            margin-top: 20px;
+        }
+    }
+
+    .social-links {
+        .footer-logo {
+            img {
+                width: 40%;
+            }   
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .navigation-bar {
+        background-color: #fff;
+        .logo {
+            .fa-bars {
+                color: #000;
+                display: block;
+            }
+        }
+        nav {
+            display: none;
+            ul {
+                flex-direction: column;
+                li {
+                    color: #000;
+                    padding-bottom: 10px;
+                    &:hover {
+                        &::after {
+                            width: 0%;
+                        }
+                        &::before {
+                            width: 0%;
+                        }
+                    }
+                    a {
+                        color: #000;
+                        padding-bottom: 10px;
+                    }
+                    .service-dropdown-menu,
+                    .portfolio-dropdown-menu {
+                        position: static;
+                        height: 0px;
+                        background-color: #fff;
+                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                        li {
+                            i {
+                                color: #000;
+                            }
+                        }
+                    }
+                    .digital-marketing-dropdown {
+                        &:hover{
+                            .digital-marketing-dropdown-menu{
+                                background-color: #fff;
+                                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                            }
+                        }
+                        
+                        .digital-marketing-dropdown-menu{
+                            background-color: #fff;
+                            li{
+                                a{
+                                    color: #000;
+                                }
+                            }
+                        }
+                    }
+                }
+                .service-nav {
+                    &:hover {
+                        .service-dropdown-menu {
+                            transition: all 0.4s ease;
+                            height: 100%;
+                        }
+                    }
+                }
+                .portfolio-nav {
+                    &:hover {
+                        .portfolio-dropdown-menu {
+                            transition: all 0.4s ease;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .social-links {
+        .footer-logo {
+            img {
+                width: 50%;
+            }   
+        }
+    }
+}

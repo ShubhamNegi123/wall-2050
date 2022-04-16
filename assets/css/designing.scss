@@ -90,7 +90,6 @@ $text-color: #777;
     }
 }
 
-/* digital-service */
 .digital-service {
     @include section-space;
     background-image: url(../images/multimedia-img2.jpg);
@@ -145,6 +144,7 @@ $text-color: #777;
         z-index: 99;
         img {
             margin-top: -50px;
+            width: 100%;
         }
     }
     &::after {
@@ -158,7 +158,6 @@ $text-color: #777;
         z-index: 1;
     }
 }
-/* digital-service end */
 
 .our-work {
     @include section-space;
@@ -236,3 +235,6 @@ $text-color: #777;
     }
    
 }
+
+
+

@@ -28,7 +28,7 @@ $text-color: #777;
 /* Dosis fonts */
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap");
 
-#preloader{
+#preloader {
     background: #000 url(../images/loading1.gif) no-repeat center;
     background-size: 30%;
     height: 100vh;
@@ -36,7 +36,6 @@ $text-color: #777;
     position: fixed;
     z-index: 9999999999999999;
 }
-
 
 header {
     /* slider */
@@ -159,6 +158,7 @@ header {
     }
     .about-images {
         position: relative;
+        overflow: hidden;
         img {
             width: 100%;
         }
@@ -178,6 +178,7 @@ header {
             color: #000;
         }
         .hover-content {
+            overflow: hidden;
             transition: all 0.7s ease;
             position: absolute;
             display: flex;
@@ -186,8 +187,8 @@ header {
             align-items: center;
             left: opx;
             top: 0px;
-            bottom: 0px;
-            right: 0px;
+            width: 100%;
+            height: 100%;
             background: rgba(255, 255, 255, 0.9);
             opacity: 0;
             padding: 30px;
@@ -350,6 +351,7 @@ header {
         z-index: 99;
         img {
             margin-top: -50px;
+            width: 100%;
         }
     }
     &::after {
@@ -382,13 +384,10 @@ header {
     .portfolio-tabs {
         text-align: center;
         margin: 50px 0px;
-        ul {
-            li {
-                text-transform: uppercase;
-                margin-right: 50px;
-                cursor: pointer;
-                letter-spacing: 3px;
-            }
+        p {
+            text-transform: uppercase;
+            cursor: pointer;
+            letter-spacing: 3px;
         }
     }
     .portfolio-tab-target {
@@ -398,7 +397,7 @@ header {
             .image-wrapper {
                 overflow: hidden;
                 position: relative;
-                text-align: center;                
+                text-align: center;
                 img {
                     width: 100%;
                     transition: all 0.3s ease;
@@ -444,8 +443,8 @@ header {
             display: block;
         }
     }
-    .smb-banner-image-wrapper{
-        .image-wrapper{
+    .smb-banner-image-wrapper {
+        .image-wrapper {
             border: 1px solid #000;
         }
     }
@@ -633,7 +632,7 @@ header {
             width: 50%;
             height: 40px;
         }
-        label{
+        label {
             position: absolute;
             color: $primary-color;
             bottom: -25px;
@@ -688,17 +687,16 @@ header {
         height: 100%;
         bottom: 0px;
         left: 0px;
-        background-color: rgba(17,17,17,.93);
-        transition: all .3s ease;
+        background-color: rgba(17, 17, 17, 0.93);
+        transition: all 0.3s ease;
         .cover-content {
-            cursor: pointer;
             text-align: center;
             position: absolute;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
             .location-icon {
-                background-color: #fff;               
+                background-color: #fff;
                 transform: rotate(45deg);
                 display: inline-block;
                 padding: 6px 12px;
@@ -707,7 +705,8 @@ header {
                     color: #111;
                 }
             }
-            p{
+            p {
+                cursor: pointer;
                 @include p;
                 letter-spacing: 5px;
                 word-spacing: 5px;
@@ -717,9 +716,10 @@ header {
                 text-align: center;
                 color: #fff;
             }
-            .cover{
+            .cover {
                 display: none;
-                p{
+                p {
+                    cursor: pointer;
                     @include p;
                     letter-spacing: 5px;
                     word-spacing: 5px;
@@ -744,3 +744,33 @@ header {
     } */
 }
 /* map end */
+
+@media only screen and (max-width: 767px) {
+    .about {
+        .about-images {
+            .hover-content {
+                height: 87%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .about {
+        .about-images {
+            .hover-content {
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .why-us {
+        .quality {
+            p {
+                text-align: justify;
+            }
+        }
+    }
+}

@@ -7,9 +7,6 @@ $(function () {
     let messageValid;
     var selectedServices;
 
-
-
-
     function isNameValid() {
         let name = $('#name').val();
         let len = name.length;
@@ -87,7 +84,6 @@ $(function () {
             phoneValid = true;
         }
     }
-
    
     function isServiceValid() {
         if (selectedServices === 'select') {
@@ -141,12 +137,6 @@ $(function () {
 
 
 
-
-
-
-
-
-
     $('#name').blur(function () {
         isNameValid();
         hideSubmitError();
@@ -168,11 +158,10 @@ $(function () {
        isMessageValid();
        hideSubmitError();
     });
-
    
     
 
-    $("form").submit(function (event) {
+    $("#submit").hover(function (event) {
         event.preventDefault();
         isNameValid();
         isEmailValid();
@@ -181,53 +170,15 @@ $(function () {
 
         if (nameValid && emailValid && phoneValid && messageValid) {
             $('#newsletter label').hide();
-            window.location = 'index.html'
-        } else {
            $('.submit-error').css({
-            opacity: '1',
-            visibility: 'visible',
+               opacity: '1',
+                visibility: 'visible',
            });
         }
+        
     });
 
 
-
-
-    // Validate Email
-    /* 
-        let isEmailValid;
-        function isFormValid() {
-            $('#email').keyup(function () {
-                let email = $('#email').val();
-                let regex = /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
-                if (regex.test(email)) {
-                    $('#newsletter label').hide();
-                    isEmailValid = true;
-                } else if (email === '') {
-                    $('#newsletter label').show();
-                    $('#newsletter label').text('please enter your Email');
-                    isEmailValid = false;
-                } else {
-                    $('#newsletter label').show();
-                    $('#newsletter label').text('please enter valid Email');
-                    isEmailValid = false;
-                }
-                return isEmailValid;
-            });
-        }
-    
-        $("form").submit(function (event) {
-            event.preventDefault()
-            if (isEmailValid) {
-                $('#newsletter label').hide();
-                window.location = 'assets/php/newsletter.php'
-            } else {
-                $('#newsletter label').show();
-                $('#newsletter label').text('please enter valid Email');
-            }
-        });
-    
-     */
 
 
 });

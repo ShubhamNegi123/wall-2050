@@ -4,14 +4,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap");
 .banner {
   /*  img{
-        width: 100%;
-    } */
+      width: 100%;
+  } */
   padding: 100px;
   padding-top: 150px;
   background-color: #111;
   width: 100%;
 }
-
 .banner .about-heading h1 {
   font-size: 30px;
   letter-spacing: 5px;
@@ -19,7 +18,6 @@
   text-transform: uppercase;
   color: #fff;
 }
-
 .banner .about-heading p {
   font-size: 16px;
   line-height: 30px;
@@ -33,14 +31,12 @@
 .after-contact {
   margin-top: 100px;
 }
-
 .after-contact h3 {
   font-size: 25px;
   margin-bottom: 30px;
   letter-spacing: 5px;
   word-spacing: 5px;
 }
-
 .after-contact p {
   font-size: 16px;
   line-height: 30px;
@@ -52,16 +48,14 @@
 .form {
   margin-top: 100px;
 }
-
 .form .inputs input, .form .inputs select {
   width: 100%;
   height: 30px;
   font-size: 14px;
   padding-left: 15px;
   font-style: italic;
-  border: 1px solid #dad7d7;
+  border: 1px solid rgb(218, 215, 215);
 }
-
 .form .inputs .error {
   margin-bottom: 10px;
   color: red;
@@ -70,20 +64,17 @@
   opacity: 0;
   visibility: hidden;
 }
-
 .form .message textarea {
   width: 100%;
   height: 220px;
-  border: 1px solid #dad7d7;
+  border: 1px solid rgb(218, 215, 215);
   padding: 5px 15px;
   font-style: italic;
   resize: none;
 }
-
 .form .submit {
   margin-top: 10px;
 }
-
 .form .submit button {
   padding: 5px 20px;
   background-color: rgba(34, 34, 34, 0.9);
@@ -97,7 +88,6 @@
   outline: none;
   border-radius: 5px;
 }
-
 .form .submit-error {
   color: red;
   font-weight: bold;
@@ -105,7 +95,6 @@
   opacity: 0;
   visibility: hidden;
 }
-
 .form .error {
   margin-bottom: 10px;
   color: red;
@@ -123,21 +112,19 @@
   height: 500px;
   position: relative;
   /* &::after{
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-        width: 100%;
-        height: 100%;
-        content: '';
-        background-color: rgba(17,17,17,.6);
-    } */
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background-color: rgba(17,17,17,.6);
+  } */
 }
-
 .map iframe {
   width: 100%;
   height: 100%;
 }
-
 .map .map-cover {
   position: absolute;
   width: 100%;
@@ -145,34 +132,26 @@
   bottom: 0px;
   left: 0px;
   background-color: rgba(17, 17, 17, 0.93);
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
-
 .map .map-cover .cover-content {
   cursor: pointer;
   text-align: center;
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-
 .map .map-cover .cover-content .location-icon {
   background-color: #fff;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   display: inline-block;
   padding: 6px 12px;
 }
-
 .map .map-cover .cover-content .location-icon i {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   color: #111;
 }
-
 .map .map-cover .cover-content p {
   font-size: 16px;
   line-height: 30px;
@@ -186,11 +165,9 @@
   text-align: center;
   color: #fff;
 }
-
 .map .map-cover .cover-content .cover {
   display: none;
 }
-
 .map .map-cover .cover-content .cover p {
   font-size: 16px;
   line-height: 30px;
@@ -207,5 +184,4 @@
 }
 
 /* map end */
-/*  */
-/*# sourceMappingURL=contact.css.map */
+/*  *//*# sourceMappingURL=contact.css.map */
