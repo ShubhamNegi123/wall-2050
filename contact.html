@@ -73,7 +73,7 @@
 
     <section class="form">
         <div class="container">
-            <form >
+            <form action="contact.php">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="row">
@@ -97,10 +97,11 @@
                                         <option value="Google Ad">Google Ad</option>
                                         <option value="Youtube marketing & Ad">Youtube marketing & Ad</option>
                                     </select>
+
                                     <label for="services" class="error services-error">error</label>
                                 </div>
                             </div>
-                            <div class="col-lg-6 ">
+                            <div class="col-lg-6">
                                 <div class="message">
                                     <textarea name="message" id="message" cols="" rows="" placeholder="COMMENTS"></textarea>
                                     <label for="message" class="error message-error">error</label>
@@ -110,7 +111,7 @@
                     </div>
                 </div>
                 <div class="submit text-center">
-                    <button type="submit">submit message</button>
+                    <button id="submit" type="submit">submit message</button>
                     <p class="submit-error">Please fill the all input fields</p>
                 </div>
             </form>
@@ -144,8 +145,9 @@
     <script src="assets/js/header-footer.js"></script>
     <script src="assets/js/navigationBg.js"></script>
     <script src="assets/js/contact-form.js"></script>
-    <script>
-        
+    <script src="assets/js/smoothScroll.js"></script>
+    
+    <script>        
         $('.uncover').click(function(){
             $('.map-cover').css({
                 transition: 'all .3s ease',
@@ -166,8 +168,7 @@
             $('.uncover').show();
             $('.uncover-icon').show();
             $('.cover').hide();
-        });
-    
+        });    
     </script>
 </body>
 
