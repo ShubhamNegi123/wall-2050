@@ -8,7 +8,7 @@ $message = $_REQUEST['message'] ;
 $services = $_REQUEST['services'];
 $subject = "Message from: $name";
 $headers = "wallcommunication@gmail.com";
-$body = "From: $name \n\n Email: $email \n\n Phone: $phone \n\n  
+$body = "Inquery from wallcommunication \n\n From: $name \n\n Email: $email \n\n Phone: $phone \n\n  
 message: $message \n\n services : $services";
 $sent = mail($to, $subject, $body);
 if($sent)

@@ -111,9 +111,9 @@
                             </tr>
                             <tr>
                                 <td>Ad budget</td>
-                                <td>upto 100000/m</td>
-                                <td>upto 500000/m</td>
-                                <td>upto 1000000/m</td>
+                                <td>upto 99,999/m</td>
+                                <td>upto 4,99,999/m</td>
+                                <td>upto 9,99,999/m</td>
                                 
                               
                             </tr>
@@ -253,40 +253,40 @@
     <section class="contact-us" id="contact-us">
         <div class="container">
             <h2>Let's Connect</h2>
-            <form  id="package-form" class="form">
+            <form  id="package-form" class="form" action="packages.php">
                 <div class="row">
-                    <div class="col-lg-6 mt-4">
+                    <div class="col-sm-6 mt-4 col-10">
                         <input type="text" placeholder="Name" id="name" name="name">
                         <p class="error name-error">error</p>
                     </div>
-                    <div class="col-lg-6 mt-4">
+                    <div class="col-sm-6 mt-4 col-10">
                         <input type="text" placeholder="Email" id="email" name="email">
                         <p class="error email-error">error</p>
                     </div>
-                    <div class="col-lg-6 mt-4">
+                    <div class="col-sm-6 mt-4 col-10">
                         <input type="text" placeholder="Phone" id="phone" name="phone">
                         <p class="error phone-error">error</p>
                     </div>
-                    <div class="col-lg-6 mt-4">
+                    <div class="col-sm-6 mt-4 col-10">
                         <input type="text" placeholder="Website URL" id="website" name="website">
                         <p class="error website-error">error</p>
                     </div>
 
-                    <div class="col-lg-6 mt-4">
+                    <div class="col-sm-6 mt-4 col-10">
                         <input type="text" placeholder="package" id="package" name="package" value="Package" disabled>
                         <p class="error">error</p>
                     </div>
-                    <div class="col-lg-6 mt-4">
+                    <div class="col-sm-6 mt-4 col-10">
                         <input type="text" placeholder="google Ad" id="google Ad" name="packageName" value="google Ad" disabled>
                         <p class="error ">error</p>
                     </div>
 
-                    <div class="col-lg-12 mt-4">
+                    <div class="col-sm-12 col-10 mt-4">
                         <textarea name="message" id="message" cols="" rows="" placeholder="Message"></textarea>
                         <p class="error message-error">error</p>
                     </div>
                     <div class="col-lg-12 text-center mt-4">
-                        <button type="submit">Submit</button>
+                        <button  id="packageSubmit" type="submit">Submit</button>
                         <p class="error submit-error">Please fill the all input fields</p>                                        
                     </div>
                 </div>

@@ -4,13 +4,13 @@ $email = $_REQUEST['email'] ;
 $subject = " $email : Subscribe Our Newsletter";
 $headers = "wallcommunication@gmail.com";
 
-$sent = mail($to, $headers);
+$sent = mail($to, $headers,$subject);
 if($sent)
 {echo "<script language=javascript>window.location = 'index.html';</script>";}
 else
 {echo "<script language=javascript>window.location = 'index.html';</script>";}
 
- $retrieval = mail ($to,$headers);
+ $retrieval = mail ($to,$headers,$subject);
  if( $retrieval == true ) {
             echo "Message sent successfully...";
     }else {
