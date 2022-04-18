@@ -84,15 +84,23 @@ header .main-slider .main-slider-bg::after {
 }
 header .main-slider .main-slider-bg1 {
   background: url(../images/slider1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 header .main-slider .main-slider-bg2 {
   background: url(../images/slider2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 header .main-slider .main-slider-bg3 {
   background: url(../images/slider3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 header .main-slider .main-slider-bg4 {
   background: url(../images/slider4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 header .owl-carousel .owl-nav button.owl-next,
 header .owl-carousel .owl-nav button.owl-prev {

@@ -75,10 +75,13 @@ html {
 .seo-packages {
     padding: 30px 0px;
     @include section-space();
-    background-color: #eee;
+    background-color: #eee;    
+    width: 100%;
+    overflow: scroll;
     .packages-wrapper{
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         overflow: hidden;
+        min-width: 720px;
     }
     h2 {
         margin-bottom: 10px;
@@ -92,6 +95,7 @@ html {
     .main-table {
         background-color: $secondary-color;
         padding: 5px;
+        border: 1px solid #000;
         width: 100%;
         border: 1px solid rgba(0, 0, 0, 0.2);
         th {

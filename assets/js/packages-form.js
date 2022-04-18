@@ -138,7 +138,7 @@ $(function () {
     });
 
    
-    $("form").submit(function (event) {
+    $("#packageSubmit").hover(function (event) {
         event.preventDefault();
         isNameValid();
         isEmailValid();
