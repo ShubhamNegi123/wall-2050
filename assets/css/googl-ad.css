@@ -8,6 +8,7 @@
   background-color: #111;
   width: 100%;
 }
+
 .banner .about-heading h1 {
   font-size: 30px;
   letter-spacing: 5px;
@@ -15,6 +16,7 @@
   text-transform: uppercase;
   color: #fff;
 }
+
 .banner .about-heading p {
   font-size: 16px;
   line-height: 30px;
@@ -32,6 +34,7 @@ html {
 .google-ad-content {
   margin-top: 100px;
 }
+
 .google-ad-content h2 {
   margin-top: 50px;
   letter-spacing: 5px;
@@ -40,6 +43,7 @@ html {
   text-transform: uppercase;
   font-size: 25px;
 }
+
 .google-ad-content p {
   font-size: 16px;
   line-height: 30px;
@@ -56,11 +60,14 @@ html {
   width: 100%;
   overflow: scroll;
 }
+
 .google-ad-packages .packages-wrapper {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   overflow: hidden;
   min-width: 720px;
 }
+
 .google-ad-packages h2 {
   margin-bottom: 10px;
   letter-spacing: 5px;
@@ -70,12 +77,14 @@ html {
   font-size: 25px;
   text-align: center;
 }
+
 .google-ad-packages .main-table {
   background-color: #3983c7;
   padding: 5px;
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
+
 .google-ad-packages .main-table th {
   padding: 10px 0px;
   text-align: center;
@@ -84,13 +93,16 @@ html {
   width: 25%;
   border-bottom: 1px solid #fff;
 }
+
 .google-ad-packages .main-table th i {
   color: #fff;
 }
+
 .google-ad-packages .main-table th:first-child {
   text-align: left;
   padding-left: 15px;
 }
+
 .google-ad-packages .main-table td {
   padding: 10px 0px;
   text-align: center;
@@ -99,18 +111,21 @@ html {
   width: 25%;
   border-bottom: 1px solid #fff;
 }
+
 .google-ad-packages .main-table td a {
   color: #fff;
   font-weight: bold;
   border-radius: 5px;
   padding: 10px 50px;
-  background-color: rgb(191, 0, 38);
+  background-color: #bf0026;
   cursor: pointer;
 }
+
 .google-ad-packages .main-table td:first-child {
   text-align: left;
   padding-left: 15px;
 }
+
 .google-ad-packages .on-page-activities h3,
 .google-ad-packages .content-writing h3,
 .google-ad-packages .off-page h3,
@@ -125,33 +140,41 @@ html {
   background-color: #111;
   color: #fff;
   border: 1px solid #fff;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   cursor: pointer;
 }
+
 .google-ad-packages .on-page-activities h3 i,
 .google-ad-packages .content-writing h3 i,
 .google-ad-packages .off-page h3 i,
 .google-ad-packages .monthly-report h3 i {
   color: #fff;
 }
+
 .google-ad-packages .on-page-activities ul,
 .google-ad-packages .content-writing ul,
 .google-ad-packages .off-page ul,
 .google-ad-packages .monthly-report ul {
   display: none;
 }
+
 .google-ad-packages .on-page-activities ul .outer-list:nth-child(2n),
 .google-ad-packages .content-writing ul .outer-list:nth-child(2n),
 .google-ad-packages .off-page ul .outer-list:nth-child(2n),
 .google-ad-packages .monthly-report ul .outer-list:nth-child(2n) {
-  background-color: rgb(230, 227, 227);
+  background-color: #e6e3e3;
 }
+
 .google-ad-packages .on-page-activities ul .outer-list ul,
 .google-ad-packages .content-writing ul .outer-list ul,
 .google-ad-packages .off-page ul .outer-list ul,
 .google-ad-packages .monthly-report ul .outer-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .google-ad-packages .on-page-activities ul .outer-list ul li,
 .google-ad-packages .content-writing ul .outer-list ul li,
 .google-ad-packages .off-page ul .outer-list ul li,
@@ -165,10 +188,17 @@ html {
   /*  color: $secondary-color; */
   padding: 5px 0px;
   font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .google-ad-packages .on-page-activities ul .outer-list ul li:first-child,
 .google-ad-packages .content-writing ul .outer-list ul li:first-child,
 .google-ad-packages .off-page ul .outer-list ul li:first-child,
@@ -176,36 +206,44 @@ html {
   text-align: left;
   padding-left: 15px;
 }
+
 .google-ad-packages .on-page-activities ul .outer-list ul li i,
 .google-ad-packages .content-writing ul .outer-list ul li i,
 .google-ad-packages .off-page ul .outer-list ul li i,
 .google-ad-packages .monthly-report ul .outer-list ul li i {
   font-size: 20px;
 }
+
 .google-ad-packages .on-page-activities ul .outer-list ul li .fa-circle-check,
 .google-ad-packages .content-writing ul .outer-list ul li .fa-circle-check,
 .google-ad-packages .off-page ul .outer-list ul li .fa-circle-check,
 .google-ad-packages .monthly-report ul .outer-list ul li .fa-circle-check {
   color: #3983c7;
 }
+
 .google-ad-packages .on-page-activities ul .outer-list ul li .fa-circle-xmark,
 .google-ad-packages .content-writing ul .outer-list ul li .fa-circle-xmark,
 .google-ad-packages .off-page ul .outer-list ul li .fa-circle-xmark,
 .google-ad-packages .monthly-report ul .outer-list ul li .fa-circle-xmark {
-  color: rgb(191, 0, 38);
+  color: #bf0026;
 }
+
 .google-ad-packages .on-page-activities ul .outer-list ul li:first-child,
 .google-ad-packages .content-writing ul .outer-list ul li:first-child,
 .google-ad-packages .off-page ul .outer-list ul li:first-child,
 .google-ad-packages .monthly-report ul .outer-list ul li:first-child {
-  justify-content: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
+
 .google-ad-packages .on-page-activities ul .click-list,
 .google-ad-packages .content-writing ul .click-list,
 .google-ad-packages .off-page ul .click-list,
 .google-ad-packages .monthly-report ul .click-list {
   margin: 10px 0px;
 }
+
 .google-ad-packages .on-page-activities ul .click-list ul li,
 .google-ad-packages .content-writing ul .click-list ul li,
 .google-ad-packages .off-page ul .click-list ul li,
@@ -213,6 +251,7 @@ html {
   text-transform: capitalize;
   border: none;
 }
+
 .google-ad-packages .on-page-activities ul .click-list ul li a,
 .google-ad-packages .content-writing ul .click-list ul li a,
 .google-ad-packages .off-page ul .click-list ul li a,
@@ -222,9 +261,10 @@ html {
   font-weight: bold;
   border-radius: 5px;
   padding: 10px 50px;
-  background-color: rgb(191, 0, 38);
+  background-color: #bf0026;
   cursor: pointer;
 }
+
 .google-ad-packages .on-page-activities ul .click-list ul li:first-child a,
 .google-ad-packages .content-writing ul .click-list ul li:first-child a,
 .google-ad-packages .off-page ul .click-list ul li:first-child a,
@@ -234,6 +274,7 @@ html {
   border: none;
   color: #777;
 }
+
 .google-ad-packages .on-page-activities ul {
   display: block;
 }
@@ -243,6 +284,7 @@ html {
   padding: 50px 0px;
   background-color: #111;
 }
+
 .contact-us h2 {
   margin-bottom: 10px;
   letter-spacing: 5px;
@@ -253,6 +295,7 @@ html {
   text-align: center;
   color: #fff;
 }
+
 .contact-us form input {
   width: 100%;
   height: 40px;
@@ -260,18 +303,27 @@ html {
   padding-left: 15px;
   border: 1px solid #eee;
 }
-.contact-us form input::-moz-placeholder {
+
+.contact-us form input::-webkit-input-placeholder {
   color: #fff;
   font-weight: bold;
 }
+
 .contact-us form input:-ms-input-placeholder {
   color: #fff;
   font-weight: bold;
 }
+
+.contact-us form input::-ms-input-placeholder {
+  color: #fff;
+  font-weight: bold;
+}
+
 .contact-us form input::placeholder {
   color: #fff;
   font-weight: bold;
 }
+
 .contact-us form textarea {
   width: 100%;
   background-color: transparent;
@@ -279,18 +331,27 @@ html {
   border: 1px solid #eee;
   resize: none;
 }
-.contact-us form textarea::-moz-placeholder {
+
+.contact-us form textarea::-webkit-input-placeholder {
   color: #fff;
   font-weight: bold;
 }
+
 .contact-us form textarea:-ms-input-placeholder {
   color: #fff;
   font-weight: bold;
 }
+
+.contact-us form textarea::-ms-input-placeholder {
+  color: #fff;
+  font-weight: bold;
+}
+
 .contact-us form textarea::placeholder {
   color: #fff;
   font-weight: bold;
 }
+
 .contact-us form button {
   padding: 3px 50px;
   text-transform: uppercase;
@@ -299,14 +360,23 @@ html {
   border-radius: 5px;
   color: #fff;
 }
+
 .contact-us .error {
   visibility: hidden;
   opacity: 0;
-  color: rgb(191, 0, 38);
+  color: #bf0026;
   padding-left: 15px;
   font-weight: bold;
   color: red;
 }
+
 .contact-us .submit-error {
   margin-top: 10px;
-}/*# sourceMappingURL=googl-ad.css.map */
+}
+
+@media only screen and (max-width: 567px) {
+  .banner {
+    padding-left: 50px;
+  }
+}
+/*# sourceMappingURL=googl-ad.css.map */

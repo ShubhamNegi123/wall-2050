@@ -99,3 +99,8 @@ $text-color: #777;
         }
     }
 }
+@media only screen and(max-width : 567px) {
+    .banner{
+        padding-left: 50px;
+    }
+}

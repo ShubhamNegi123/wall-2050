@@ -157,6 +157,7 @@ $(function () {
             opacity: '1',
             transition: 'all .3s ease'
         });
+        $('.services-read-more a').attr('href','designing.html');
     });
 
     $('.google-ad').click(function () {
@@ -166,6 +167,7 @@ $(function () {
             opacity: '1',
             transition: 'all .3s ease'
         });
+        $('.services-read-more a').attr('href','google-ad.html');
     });
 
     $('.web').click(function () {
@@ -175,6 +177,7 @@ $(function () {
             opacity: '1',
             transition: 'all .3s ease'
         });
+        $('.services-read-more a').attr('href','web-development-services-in-delhi.html');
     });
 
     $('.smo').click(function () {
@@ -184,6 +187,7 @@ $(function () {
             opacity: '1',
             transition: 'all .3s ease'
         });
+        $('.services-read-more a').attr('href','smo-services-in-delhi.html');
     });
 
     $('.seo').click(function () {
@@ -193,6 +197,7 @@ $(function () {
             opacity: '1',
             transition: 'all .3s ease'
         });
+        $('.services-read-more a').attr('href','seo-services-in-delhi.html');
     });
 
     $('.smm').click(function () {
@@ -202,6 +207,7 @@ $(function () {
             opacity: '1',
             transition: 'all .3s ease'
         });
+        $('.services-read-more a').attr('href','smm-services-in-delhi.html');
     });
 
 

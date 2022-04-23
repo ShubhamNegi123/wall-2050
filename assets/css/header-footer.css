@@ -5,14 +5,17 @@
 body * {
   color: #777;
   font-weight: 400;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0px;
   padding: 0px;
   font-family: "Dosis", sans-serif;
 }
+
 body * a {
   text-decoration: none;
 }
+
 body * ul {
   list-style: none;
 }
@@ -22,6 +25,7 @@ body * ul {
   bottom: 25px;
   right: 20px;
 }
+
 .contact-icon .fa-xmark {
   display: none;
   padding: 15px 19px;
@@ -31,6 +35,7 @@ body * ul {
   font-size: 25px;
   cursor: pointer;
 }
+
 .contact-icon .fa-comment-sms {
   padding: 15px;
   color: #fff;
@@ -39,6 +44,7 @@ body * ul {
   font-size: 25px;
   cursor: pointer;
 }
+
 .contact-icon .contact-popup {
   display: none;
   width: 320px;
@@ -47,6 +53,7 @@ body * ul {
   bottom: 10%;
   background-color: #eee;
 }
+
 .contact-icon .contact-popup p {
   background-color: #111;
   padding: 20px;
@@ -54,6 +61,7 @@ body * ul {
   color: #fff;
   text-align: center;
 }
+
 .contact-icon .contact-popup form {
   margin: 20px;
   border-left: 5px solid #000;
@@ -63,6 +71,7 @@ body * ul {
   padding: 15px;
   margin-top: -20px;
 }
+
 .contact-icon .contact-popup form input {
   width: 90%;
   padding-left: 15px;
@@ -70,6 +79,7 @@ body * ul {
   border-radius: 5px;
   border: 2px solid #eee;
 }
+
 .contact-icon .contact-popup form label {
   text-align: left;
   margin-bottom: 5px;
@@ -80,6 +90,7 @@ body * ul {
   opacity: 0;
   visibility: hidden;
 }
+
 .contact-icon .contact-popup form textarea {
   width: 90%;
   height: 65px;
@@ -87,6 +98,7 @@ body * ul {
   border: 2px solid #eee;
   padding-left: 15px;
 }
+
 .contact-icon .contact-popup form button {
   width: 90%;
   padding: 5px 0px;
@@ -103,6 +115,7 @@ body * ul {
   bottom: 20px;
   left: 20px;
 }
+
 .fixed-social-icons .fa-share-nodes {
   padding: 15px;
   color: #fff;
@@ -111,6 +124,7 @@ body * ul {
   font-size: 25px;
   cursor: pointer;
 }
+
 .fixed-social-icons .tootle-icons i {
   position: absolute;
   bottom: 80px;
@@ -122,13 +136,17 @@ body * ul {
   font-size: 25px;
   margin-top: 20px;
 }
+
 .fixed-social-icons .tootle-icons .fa-instagram-square {
   left: -100px;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .fixed-social-icons .tootle-icons .fa-facebook {
   bottom: 160px;
   left: -100px;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -140,9 +158,11 @@ body * ul {
   left: 0px;
   width: 100%;
 }
+
 .navigation-bar .logo {
   position: relative;
 }
+
 .navigation-bar .logo .fa-bars {
   display: none;
   position: absolute;
@@ -152,26 +172,30 @@ body * ul {
   font-size: 22px;
   cursor: pointer;
 }
+
 .navigation-bar .logo img {
   position: relative;
   z-index: 999;
   width: 100%;
 }
+
 .navigation-bar nav {
   position: relative;
 }
+
 .navigation-bar nav ul {
   /* .service:hover {
-      .service-dropdown-menu {
-          position: absolute;
-      }
-      .portfolio :hover {
-          .portfolio-dropdown-menu {
-              position: absolute;
-          }
-      }
-  } */
+                .service-dropdown-menu {
+                    position: absolute;
+                }
+                .portfolio :hover {
+                    .portfolio-dropdown-menu {
+                        position: absolute;
+                    }
+                }
+            } */
 }
+
 .navigation-bar nav ul li {
   position: relative;
   color: #fff;
@@ -180,6 +204,7 @@ body * ul {
   cursor: pointer;
   font-size: 14px;
 }
+
 .navigation-bar nav ul li a {
   padding-bottom: 10px;
   text-transform: uppercase;
@@ -191,67 +216,88 @@ body * ul {
   background-color: transparent;
   text-transform: uppercase;
   font-size: 14px;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .navigation-bar nav ul li a i {
   color: #fff;
 }
+
 .navigation-bar nav ul li a::after {
+  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   position: absolute;
   top: 28px;
   left: 50%;
+  -webkit-transition: translate(-50%);
   transition: translate(-50%);
   width: 0%;
   height: 3px;
   content: "";
   background-color: red;
 }
+
 .navigation-bar nav ul li a::before {
+  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   position: absolute;
   top: 28px;
   right: 50%;
+  -webkit-transition: translate(-50%);
   transition: translate(-50%);
   width: 0%;
   height: 3px;
   content: "";
   background-color: red;
 }
+
 .navigation-bar nav ul li::after {
+  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   position: absolute;
   top: 28px;
   left: 50%;
+  -webkit-transition: translate(-50%);
   transition: translate(-50%);
   width: 0%;
   height: 3px;
   content: "";
   background-color: #be0026;
 }
+
 .navigation-bar nav ul li::before {
+  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   position: absolute;
   top: 28px;
   right: 50%;
+  -webkit-transition: translate(-50%);
   transition: translate(-50%);
   width: 0%;
   height: 3px;
   content: "";
   background-color: #be0026;
 }
+
 .navigation-bar nav ul li:hover {
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  color: linear-gradient(90deg, rgb(190, 0, 38) 0%, rgb(57, 131, 199) 100%);
+  color: linear-gradient(90deg, #be0026 0%, #3983c7 100%);
 }
+
 .navigation-bar nav ul li:hover::after {
+  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   width: 60%;
 }
+
 .navigation-bar nav ul li:hover::before {
+  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   width: 60%;
 }
+
 .navigation-bar nav ul li .service-dropdown-menu,
 .navigation-bar nav ul li .portfolio-dropdown-menu,
 .navigation-bar nav ul li .digital-marketing-dropdown-menu {
@@ -260,32 +306,40 @@ body * ul {
   width: 180px;
   position: absolute;
   top: 80px;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
 .navigation-bar nav ul li .service-dropdown-menu li,
 .navigation-bar nav ul li .portfolio-dropdown-menu li,
 .navigation-bar nav ul li .digital-marketing-dropdown-menu li {
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   padding-left: 10px;
   border-bottom: 1px solid #eee;
   padding-bottom: 0px;
   border-left: 3px solid transparent;
 }
+
 .navigation-bar nav ul li .service-dropdown-menu li a,
 .navigation-bar nav ul li .portfolio-dropdown-menu li a,
 .navigation-bar nav ul li .digital-marketing-dropdown-menu li a {
   display: block;
   padding: 10px 0px;
 }
+
 .navigation-bar nav ul li .service-dropdown-menu li i,
 .navigation-bar nav ul li .portfolio-dropdown-menu li i,
 .navigation-bar nav ul li .digital-marketing-dropdown-menu li i {
   margin-left: 10px;
   color: #fff;
-  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
+
 .navigation-bar nav ul li .service-dropdown-menu li::before, .navigation-bar nav ul li .service-dropdown-menu li::after,
 .navigation-bar nav ul li .portfolio-dropdown-menu li::before,
 .navigation-bar nav ul li .portfolio-dropdown-menu li::after,
@@ -293,19 +347,25 @@ body * ul {
 .navigation-bar nav ul li .digital-marketing-dropdown-menu li::after {
   display: none;
 }
+
 .navigation-bar nav ul li .service-dropdown-menu li:hover,
 .navigation-bar nav ul li .portfolio-dropdown-menu li:hover,
 .navigation-bar nav ul li .digital-marketing-dropdown-menu li:hover {
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   padding-left: 20px;
   border-left: 3px solid #3983c7;
 }
+
 .navigation-bar nav ul li .service-dropdown-menu li:hover i,
 .navigation-bar nav ul li .portfolio-dropdown-menu li:hover i,
 .navigation-bar nav ul li .digital-marketing-dropdown-menu li:hover i {
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
+
 .navigation-bar nav ul li .service-dropdown-menu .digital-marketing-dropdown,
 .navigation-bar nav ul li .portfolio-dropdown-menu .digital-marketing-dropdown,
 .navigation-bar nav ul li .digital-marketing-dropdown-menu .digital-marketing-dropdown {
@@ -317,6 +377,7 @@ body * ul {
   font-size: 14px;
   padding-left: 10px;
 }
+
 .navigation-bar nav ul li .service-dropdown-menu .digital-marketing-dropdown .digital-marketing-dropdown-menu,
 .navigation-bar nav ul li .portfolio-dropdown-menu .digital-marketing-dropdown .digital-marketing-dropdown-menu,
 .navigation-bar nav ul li .digital-marketing-dropdown-menu .digital-marketing-dropdown .digital-marketing-dropdown-menu {
@@ -326,24 +387,31 @@ body * ul {
   visibility: hidden;
   opacity: 0;
   width: 180px;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
 .navigation-bar nav ul li .service-dropdown-menu .digital-marketing-dropdown:hover .digital-marketing-dropdown-menu,
 .navigation-bar nav ul li .portfolio-dropdown-menu .digital-marketing-dropdown:hover .digital-marketing-dropdown-menu,
 .navigation-bar nav ul li .digital-marketing-dropdown-menu .digital-marketing-dropdown:hover .digital-marketing-dropdown-menu {
   visibility: visible;
   opacity: 1;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   top: -1px;
 }
+
 .navigation-bar nav ul .service-nav:hover .service-dropdown-menu {
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   visibility: visible;
   opacity: 1;
   top: 30px;
 }
+
 .navigation-bar nav ul .portfolio-nav:hover .portfolio-dropdown-menu {
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   visibility: visible;
   opacity: 1;
@@ -354,20 +422,27 @@ body * ul {
 .contact {
   padding-top: 50px;
 }
+
 .contact h2 {
   font-size: 30px;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 50px;
 }
+
 .contact .footer-address,
 .contact .footer-contact,
 .contact .footer-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   height: 100px;
 }
+
 .contact .footer-address::after,
 .contact .footer-contact::after,
 .contact .footer-email::after {
@@ -379,6 +454,7 @@ body * ul {
   content: "";
   background-color: #777;
 }
+
 .contact .footer-address .footer-icon,
 .contact .footer-contact .footer-icon,
 .contact .footer-email .footer-icon {
@@ -388,11 +464,13 @@ body * ul {
   padding: 5px 12px;
   background-color: #eee;
 }
+
 .contact .footer-address .fst,
 .contact .footer-contact .fst,
 .contact .footer-email .fst {
   padding: 5px 15px;
 }
+
 .contact .footer-address .footer-details h3,
 .contact .footer-contact .footer-details h3,
 .contact .footer-email .footer-details h3 {
@@ -401,6 +479,7 @@ body * ul {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+
 .contact .footer-address .footer-details p,
 .contact .footer-contact .footer-details p,
 .contact .footer-email .footer-details p {
@@ -416,49 +495,70 @@ body * ul {
   margin-bottom: 100px;
   margin-top: 100px;
 }
+
 .social-links .footer-logo {
   text-align: center;
 }
+
 .social-links .footer-logo img {
   width: 30%;
 }
+
 .social-links .links {
   text-align: center;
   margin: 30px 0px;
 }
+
 .social-links .links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .social-links .links ul li {
   border: 1px solid #000;
   width: 30px;
   background-color: transparent;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   margin-right: 30px;
 }
+
 .social-links .links ul li i {
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   padding: 5px;
   font-size: 20px;
 }
+
 .social-links .links ul li:hover {
+  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
+
 .social-links .links ul li:hover i {
-  transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
 }
+
 .social-links .copyright {
   text-align: center;
 }
+
 .social-links .copyright p {
   font-size: 20px;
   word-spacing: 5p;
 }
+
 .social-links .copyright p i {
   margin-right: 10px;
 }
+
 .social-links .copyright span {
   word-spacing: 5px;
   letter-spacing: 3px;
@@ -475,11 +575,11 @@ body * ul {
   .navigation-bar nav {
     margin-top: 20px;
   }
-
   .social-links .footer-logo img {
     width: 40%;
   }
 }
+
 @media only screen and (max-width: 500px) {
   .navigation-bar {
     background-color: #fff;
@@ -492,7 +592,10 @@ body * ul {
     display: none;
   }
   .navigation-bar nav ul {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .navigation-bar nav ul li {
     color: #000;
@@ -509,19 +612,21 @@ body * ul {
     padding-bottom: 10px;
   }
   .navigation-bar nav ul li .service-dropdown-menu,
-.navigation-bar nav ul li .portfolio-dropdown-menu {
+  .navigation-bar nav ul li .portfolio-dropdown-menu {
     position: static;
     height: 0px;
     background-color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
   .navigation-bar nav ul li .service-dropdown-menu li i,
-.navigation-bar nav ul li .portfolio-dropdown-menu li i {
+  .navigation-bar nav ul li .portfolio-dropdown-menu li i {
     color: #000;
   }
   .navigation-bar nav ul li .digital-marketing-dropdown:hover .digital-marketing-dropdown-menu {
     background-color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
   .navigation-bar nav ul li .digital-marketing-dropdown .digital-marketing-dropdown-menu {
     background-color: #fff;
@@ -530,16 +635,26 @@ body * ul {
     color: #000;
   }
   .navigation-bar nav ul .service-nav:hover .service-dropdown-menu {
+    -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     height: 100%;
   }
   .navigation-bar nav ul .portfolio-nav:hover .portfolio-dropdown-menu {
+    -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     height: 100%;
   }
 }
+
 @media only screen and (max-width: 400px) {
   .social-links .footer-logo img {
     width: 50%;
   }
-}/*# sourceMappingURL=header-footer.css.map */
+}
+
+@media only screen and (max-width: 567px) {
+  .banner {
+    padding-left: 50px;
+  }
+}
+/*# sourceMappingURL=header-footer.css.map */

@@ -136,6 +136,23 @@ body {
             }
         }
     }
+    p {
+        @include p;
+        text-align: justify;
+        font-style: italic;
+    }
+    .list{
+        font-weight: bold;
+    }
+    ol{
+        padding-left: 25px;
+        li{
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+    }
+   
+
 }
 
 .logs {
@@ -205,7 +222,7 @@ body {
     
 
     .our-story-content-wrapper {
-        min-height: 250px;
+        min-height: 100px;
         position: relative;
         .our-story-content {
             transition: all .3s ease;
@@ -215,7 +232,8 @@ body {
             opacity: 0;
             p{
                 @include p;
-                text-align: justify;
+                text-align: center;
+
             }
         }
         .mission-content{
@@ -259,20 +277,9 @@ body {
     }
 }
 
-@media only screen and (max-width : 991px){
-    .mission-vision{
-        .our-story-content-wrapper{
-            min-height: 270px;    
-            
-        } 
-    } 
-}
 
-@media only screen and (max-width : 991px){
-    .mission-vision{
-        .our-story-content-wrapper{
-            min-height: 390px;    
-            
-        } 
-    } 
+@media only screen and(max-width : 567px) {
+    .banner{
+        padding-left: 50px;
+    }
 }

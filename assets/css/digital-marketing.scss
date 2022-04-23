@@ -160,6 +160,15 @@ $text-color: #777;
             }
         }
     }
+    p {
+        @include p;
+        text-align: justify;
+        font-style: italic;
+    }
+    .list{
+        font-weight: bold;
+        word-spacing: 5px;
+    }
 }
 /* digital-service end */
 
@@ -253,4 +262,9 @@ $text-color: #777;
     }
 
     
+}
+@media only screen and(max-width : 567px) {
+    .banner{
+        padding-left: 50px;
+    }
 }

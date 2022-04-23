@@ -5,27 +5,31 @@
 body * {
   color: #777;
   font-weight: 400;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0px;
   padding: 0px;
   font-family: "Dosis", sans-serif;
 }
+
 body * a {
   text-decoration: none;
 }
+
 body * ul {
   list-style: none;
 }
 
 .banner {
   /*  img{
-      width: 100%;
-  } */
+        width: 100%;
+    } */
   padding: 100px;
   padding-top: 150px;
   background-color: #111;
   width: 100%;
 }
+
 .banner .about-heading h1 {
   font-size: 30px;
   letter-spacing: 5px;
@@ -33,6 +37,7 @@ body * ul {
   text-transform: uppercase;
   color: #fff;
 }
+
 .banner .about-heading p {
   font-size: 16px;
   line-height: 30px;
@@ -46,12 +51,14 @@ body * ul {
 .know-us {
   margin-top: 100px;
 }
+
 .know-us .know-us-content h2 {
   font-size: 25px;
   letter-spacing: 5px;
   word-spacing: 5px;
   margin-bottom: 30px;
 }
+
 .know-us .know-us-content p {
   font-size: 16px;
   line-height: 30px;
@@ -60,6 +67,7 @@ body * ul {
   text-align: justify;
   font-style: italic;
 }
+
 .know-us .about-progress-bar .progress-container .progress-wrapper {
   background-color: #eee;
   height: 3px;
@@ -67,11 +75,13 @@ body * ul {
   position: relative;
   margin-bottom: 50px;
 }
+
 .know-us .about-progress-bar .progress-container .progress-wrapper .progress-percentage {
   background-color: #13171b;
   height: 3px;
   border-radius: 3px;
 }
+
 .know-us .about-progress-bar .progress-container .progress-wrapper .progress-percentage span {
   color: #13171b;
   position: absolute;
@@ -80,24 +90,31 @@ body * ul {
   font-style: italic;
   font-size: 14px;
 }
+
 .know-us .about-progress-bar .progress-container .progress-wrapper .progress-wrapper1 {
   width: 95%;
 }
+
 .know-us .about-progress-bar .progress-container .progress-wrapper .progress-wrapper2 {
   width: 85%;
 }
+
 .know-us .about-progress-bar .progress-container .progress-wrapper .progress-wrapper3 {
   width: 88%;
 }
+
 .know-us .about-progress-bar .progress-container .progress-wrapper .progress-wrapper4 {
   width: 93%;
 }
+
 .know-us .about-progress-bar .progress-container .progress-wrapper .progress-wrapper5 {
   width: 85%;
 }
+
 .know-us .about-progress-bar .progress-container .progress-wrapper .progress-wrapper6 {
   width: 90%;
 }
+
 .know-us .about-progress-bar .progress-container .progress-wrapper p {
   font-style: italic;
   text-transform: uppercase;
@@ -107,18 +124,42 @@ body * ul {
   letter-spacing: 2px;
 }
 
+.know-us p {
+  font-size: 16px;
+  line-height: 30px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  text-align: justify;
+  font-style: italic;
+}
+
+.know-us .list {
+  font-weight: bold;
+}
+
+.know-us ol {
+  padding-left: 25px;
+}
+
+.know-us ol li {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
 .logs {
   margin-top: 100px;
   background-color: #eee;
   padding: 50px 0px;
   /* font-family: "Cinzel", serif; */
 }
+
 .logs .year-of-experience,
 .logs .countries,
 .logs .universities,
 .logs .students {
   text-align: center;
 }
+
 .logs .year-of-experience .number,
 .logs .countries .number,
 .logs .universities .number,
@@ -127,6 +168,7 @@ body * ul {
   font-weight: bold;
   margin-bottom: 0px;
 }
+
 .logs .year-of-experience p,
 .logs .countries p,
 .logs .universities p,
@@ -134,6 +176,7 @@ body * ul {
   font-size: 16px;
   text-transform: uppercase;
 }
+
 .logs .year-of-experience .plus-icon,
 .logs .countries .plus-icon,
 .logs .universities .plus-icon,
@@ -144,9 +187,11 @@ body * ul {
 .clients {
   margin-top: 100px;
 }
+
 .clients .client-logo img {
   width: 100%;
 }
+
 .clients .owl-carousel .owl-nav button.owl-next,
 .clients .owl-carousel .owl-nav button.owl-prev {
   display: none;
@@ -155,6 +200,7 @@ body * ul {
 .mission-vision {
   margin-top: 100px;
 }
+
 .mission-vision h3 {
   font-size: 25px;
   text-align: center;
@@ -162,6 +208,7 @@ body * ul {
   letter-spacing: 5px;
   word-spacing: 5px;
 }
+
 .mission-vision .our-story {
   cursor: pointer;
   padding: 3px 20px;
@@ -169,34 +216,43 @@ body * ul {
   font-size: 14px;
   border-radius: 20px;
   border: 2px solid transparent;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   letter-spacing: 2px;
 }
+
 .mission-vision .our-story:hover {
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   border: 2px solid #eee;
 }
+
 .mission-vision .our-story .active {
   border: 2px solid #000;
 }
+
 .mission-vision .our-story-content-wrapper {
-  min-height: 250px;
+  min-height: 100px;
   position: relative;
 }
+
 .mission-vision .our-story-content-wrapper .our-story-content {
-  transition: all 0.3s ease;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
   position: absolute;
   width: 100%;
   visibility: hidden;
   opacity: 0;
 }
+
 .mission-vision .our-story-content-wrapper .our-story-content p {
   font-size: 16px;
   line-height: 30px;
   word-spacing: 2px;
   letter-spacing: 1px;
-  text-align: justify;
+  text-align: center;
 }
+
 .mission-vision .our-story-content-wrapper .mission-content {
   visibility: visible;
   opacity: 1;
@@ -208,6 +264,7 @@ body * ul {
   padding: 80px 0px;
   background-color: #111;
 }
+
 .lets-talk p {
   text-transform: uppercase;
   word-spacing: 4px;
@@ -216,6 +273,7 @@ body * ul {
   text-align: center;
   margin-bottom: 30px;
 }
+
 .lets-talk a {
   text-transform: uppercase;
   border-radius: 3px;
@@ -227,20 +285,19 @@ body * ul {
   word-spacing: 2px;
   letter-spacing: 3px;
   font-size: 14px;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .lets-talk a:hover {
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background-color: #fff;
 }
 
-@media only screen and (max-width: 991px) {
-  .mission-vision .our-story-content-wrapper {
-    min-height: 270px;
+@media only screen and (max-width: 567px) {
+  .banner {
+    padding-left: 50px;
   }
 }
-@media only screen and (max-width: 991px) {
-  .mission-vision .our-story-content-wrapper {
-    min-height: 390px;
-  }
-}/*# sourceMappingURL=about-us.css.map */
+/*# sourceMappingURL=about-us.css.map */
