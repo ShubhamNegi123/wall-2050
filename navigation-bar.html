@@ -9,10 +9,10 @@
         </div>
         <!-- navigation bar -->
         <div class="col-lg-6 col-md-8">
-            <!-- navigation bar  -->            
-            <nav>                
+            <!-- navigation bar  -->
+            <nav>
                 <ul class="d-flex justify-content-between list-unstyled ">
-                    <li><a  href="index.html">home</a></li>
+                    <li><a href="index.html">home</a></li>
                     <li><a href="about-us.html">About Us</a></li>
                     <li class="service-nav">Service
                         <ul class="service-dropdown-menu">
@@ -20,7 +20,8 @@
                             <!--Designing  design.html -->
                             <li><a href="web-development-services-in-delhi.html">Web Designing</a></li>
                             <!--Digital marketing digital.html -->
-                            <li class="digital-marketing-dropdown"><a href="digital-marketing.html">Digital Marketing  <i class="fa-solid fa-angle-down"></i></a>
+                            <li class="digital-marketing-dropdown"><a href="digital-marketing.html">Digital Marketing <i
+                                        class="fa-solid fa-angle-down"></i></a>
                                 <ul class="digital-marketing-dropdown-menu">
                                     <li><a href="seo-services-in-delhi.html">SEO</a></li>
                                     <!--Printing  printing.html -->
@@ -71,8 +72,10 @@
 <div class="fixed-social-icons">
     <i class="fa-solid fa-share-nodes"></i>
     <div class="tootle-icons">
-        <a  rel="nofollow" target="blank" href="https://www.facebook.com/wallcommunicationdesings"><i class="fa-brands fa-facebook"></i></a>
-        <a  rel="nofollow" target="blank" href="https://www.instagram.com/wallcommunicationdesings"><i class="fa-brands fa-instagram-square"></i></a>
+        <a rel="nofollow" target="blank" href="https://www.facebook.com/wallcommunicationdesings"><i
+                class="fa-brands fa-facebook"></i></a>
+        <a rel="nofollow" target="blank" href="https://www.instagram.com/wallcommunicationdesings"><i
+                class="fa-brands fa-instagram-square"></i></a>
     </div>
 </div>
 
@@ -95,19 +98,29 @@
     </div>
 </div>
 
+
+<!-- <script>
+    $('.service-nav').click(function () {    
+        $('.service-dropdown-menu').css({
+            visibility: 'visible',
+            opacity: '1',
+        });
+    });
+    
+</script> -->
+
+
 <script>
-     let wWidth = $(window).width();
-    if(wWidth <= 500){
+    let wWidth = $(window).width();
+    if (wWidth <= 500) {
         $('.logo  img').attr('src', 'assets/images/footerlogo.png')
     }
-    $('.navigation-bar .fa-bars').click(function(){
+    $('.navigation-bar .fa-bars').click(function () {
         $('nav').slideToggle();
-        
     });
 </script>
 
 <script>
- 
     $('.fa-share-nodes').mouseout(function () {
         setTimeout(() => {
             $('.fa-facebook').css({
@@ -135,12 +148,10 @@
 </script>
 
 <script>
-    $('.fa-comment-sms').click(function(){
-             
+    $('.fa-comment-sms').click(function () {
+
         $('.contact-popup').slideToggle(500);
 
     });
-    function hamburgurMenu(){
-       
-    }
+
 </script>
