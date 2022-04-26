@@ -160,6 +160,7 @@ $(function () {
         $('.services-read-more a').attr('href','designing.html');
     });
 
+    
     $('.google-ad').click(function () {
         hidden();
         $('.google-ad-content-wrapper').css({
@@ -237,40 +238,45 @@ $(function () {
         $('.logos-image-wrapper').css({
             display: 'block'
         });
-        $('.portfolio-tab-target .see-more a').attr('href',)
+        $('.portfolio-tab-target .see-more a').attr('href','logos.html')
     });
 
     $('.web').click(function () {
         none();
         $('.web-image-wrapper').css({
             display: 'block'
-        })
+        });
+        $('.portfolio-tab-target .see-more a').attr('href','web-development.html')
     });
 
     $('.poster-banner').click(function () {
         none();
         $('.poster-banner-image-wrapper').css({
             display: 'block'
-        })
+        });
+        $('.portfolio-tab-target .see-more a').attr('href','poster-and-banner.html')
     });
 
     $('.packaging').click(function () {
         none();
         $('.packaging-banner-image-wrapper').css({
             display: 'block'
-        })
+        });
+        $('.portfolio-tab-target .see-more a').attr('href','packaging.html')
     });
     $('.brochure-catalogue').click(function () {
         none();
         $('.brochure-catalogue-banner-image-wrapper').css({
             display: 'block'
-        })
+        });
+        $('.portfolio-tab-target .see-more a').attr('href','brochure-and-catalogue.html')
     });
     $('.smb').click(function () {
         none();
         $('.smb-banner-image-wrapper').css({
             display: 'block'
-        })
+        });
+        $('.portfolio-tab-target .see-more a').attr('href','smb.html')
     });
 
 

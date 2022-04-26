@@ -3,6 +3,11 @@ $primary-color: #be0026;
 $secondary-color: #3983c7;
 $text-color: #777;
 
+body {
+    * {
+        box-sizing: border-box;
+    }
+}
 /* mixins */
 @mixin h1-font {
     font-size: 30px;
@@ -432,6 +437,7 @@ header {
             .image-wrapper {
                 overflow: hidden;
                 position: relative;
+                max-width: 100%;
                 text-align: center;
                 img {
                     width: 100%;
@@ -469,18 +475,19 @@ header {
                     }
                     img {
                         transition: all 0.3s ease;
-                        transform: scale(1.1);
+                        transform: scale(1.05);
                     }
                 }
             }
+            
         }
-        .logos-image-wrapper {
+        .brochure-catalogue-banner-image-wrapper {
             display: block;
         }
     }
     .smb-banner-image-wrapper {
         .image-wrapper {
-            border: 1px solid #000;
+            border: 1px solid #fff;
         }
     }
     .active-tab {
@@ -784,6 +791,15 @@ header {
     .service {
         .content-wrapper {
             min-height: 460px;
+        }
+    }
+    .portfolio {
+        .portfolio-tab-target {
+            .portfolio-target {
+                .lg-sc-img-only {
+                    display: none;
+                }
+            }
         }
     }
 }
